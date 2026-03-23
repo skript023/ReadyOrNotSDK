@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Device_Tablet.Device_Tablet_C
-// 0x0020 (0x0D00 - 0x0CE0)
+// 0x0020 (0x0D60 - 0x0D40)
 class ADevice_Tablet_C final : public ATablet
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0CE0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UFMODAudioComponent*                    VibrationComponent;                                // 0x0CE8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UFMODAudioComponent*                    SpeakerComponent;                                  // 0x0CF0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UWidgetComponent*                       ScreenWidget;                                      // 0x0CF8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0D40(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UFMODAudioComponent*                    VibrationComponent;                                // 0x0D48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UFMODAudioComponent*                    SpeakerComponent;                                  // 0x0D50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UWidgetComponent*                       ScreenWidget;                                      // 0x0D58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Device_Tablet(int32 EntryPoint);

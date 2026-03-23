@@ -17,23 +17,24 @@
 namespace SDK
 {
 
-// Function ANIMBP_Preview_Char_Body.ANIMBP_Preview_Char_Body_C.ExecuteUbergraph_ANIMBP_Preview_Char_Body
-// (Final, UbergraphFunction)
+// Function ANIMBP_Preview_Char_Body.ANIMBP_Preview_Char_Body_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
-void UANIMBP_Preview_Char_Body_C::ExecuteUbergraph_ANIMBP_Preview_Char_Body(int32 EntryPoint)
+void UANIMBP_Preview_Char_Body_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_Preview_Char_Body_C", "ExecuteUbergraph_ANIMBP_Preview_Char_Body");
+		Func = Class->GetFunction("ANIMBP_Preview_Char_Body_C", "AnimGraph");
 
-	Params::ANIMBP_Preview_Char_Body_C_ExecuteUbergraph_ANIMBP_Preview_Char_Body Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::ANIMBP_Preview_Char_Body_C_AnimGraph Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 
@@ -57,24 +58,23 @@ void UANIMBP_Preview_Char_Body_C::BlueprintUpdateAnimation(float DeltaTimeX)
 }
 
 
-// Function ANIMBP_Preview_Char_Body.ANIMBP_Preview_Char_Body_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function ANIMBP_Preview_Char_Body.ANIMBP_Preview_Char_Body_C.ExecuteUbergraph_ANIMBP_Preview_Char_Body
+// (Final, UbergraphFunction)
 // Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UANIMBP_Preview_Char_Body_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+void UANIMBP_Preview_Char_Body_C::ExecuteUbergraph_ANIMBP_Preview_Char_Body(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_Preview_Char_Body_C", "AnimGraph");
+		Func = Class->GetFunction("ANIMBP_Preview_Char_Body_C", "ExecuteUbergraph_ANIMBP_Preview_Char_Body");
 
-	Params::ANIMBP_Preview_Char_Body_C_AnimGraph Parms{};
+	Params::ANIMBP_Preview_Char_Body_C_ExecuteUbergraph_ANIMBP_Preview_Char_Body Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 }

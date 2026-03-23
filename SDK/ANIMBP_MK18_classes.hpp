@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "ANIMBP_MK18_structs.hpp"
 #include "Engine_structs.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "ReadyOrNot_classes.hpp"
+#include "ANIMBP_MK18_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 
 
 namespace SDK
@@ -52,13 +52,13 @@ public:
 	double                                        Mag01Alpha;                                        // 0x0AE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void AnimNotify_DropSpeedReloadMagazine();
-	void AnimNotify_ShowMag();
-	void BlueprintUpdateAnimation(float DeltaTimeX);
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_MK18_AnimGraphNode_BlendListByBool_14BC27694C204713BF249982948108B9();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_MK18_AnimGraphNode_ModifyBone_840474584ED0B753AD6DF9B917324032();
 	void ExecuteUbergraph_ANIMBP_MK18(int32 EntryPoint);
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_MK18_AnimGraphNode_BlendListByBool_14BC27694C204713BF249982948108B9();
+	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void AnimNotify_ShowMag();
+	void AnimNotify_DropSpeedReloadMagazine();
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()

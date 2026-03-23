@@ -26,9 +26,9 @@ public:
 	class UMoveToZoneCombatMove*                  FallbackToZoneCM;                                  // 0x0060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void OnCreate_Blueprint(class ACyberneticController* Controller);
 	void ExecuteUbergraph_AIAction_FallbackToZone(int32 EntryPoint);
 	void BeginAction_Blueprint();
-	void OnCreate_Blueprint(class ACyberneticController* Controller);
 
 	bool ShouldPerformAction() const;
 

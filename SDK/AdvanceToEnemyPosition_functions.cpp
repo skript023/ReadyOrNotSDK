@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function AdvanceToEnemyPosition.AdvanceToEnemyPosition_C.StartActivity_Blueprint
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class AAIController*                    Owner                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UAdvanceToEnemyPosition_C::StartActivity_Blueprint(class AAIController* Owner)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AdvanceToEnemyPosition_C", "StartActivity_Blueprint");
+
+	Params::AdvanceToEnemyPosition_C_StartActivity_Blueprint Parms{};
+
+	Parms.Owner = Owner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AdvanceToEnemyPosition.AdvanceToEnemyPosition_C.RequestCombatMove_Blueprint
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -34,6 +54,27 @@ void UAdvanceToEnemyPosition_C::RequestCombatMove_Blueprint(float DeltaTime)
 	Parms.DeltaTime = DeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AdvanceToEnemyPosition.AdvanceToEnemyPosition_C.GetTargetPos
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector*                         TargetPosition                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAdvanceToEnemyPosition_C::GetTargetPos(struct FVector* TargetPosition)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AdvanceToEnemyPosition_C", "GetTargetPos");
+
+	Params::AdvanceToEnemyPosition_C_GetTargetPos Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (TargetPosition != nullptr)
+		*TargetPosition = std::move(Parms.TargetPosition);
 }
 
 

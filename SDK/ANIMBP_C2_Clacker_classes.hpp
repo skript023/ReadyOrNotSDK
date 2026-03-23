@@ -32,8 +32,8 @@ public:
 	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0620(0x0048)()
 
 public:
-	void ExecuteUbergraph_ANIMBP_C2_Clacker(int32 EntryPoint);
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void ExecuteUbergraph_ANIMBP_C2_Clacker(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

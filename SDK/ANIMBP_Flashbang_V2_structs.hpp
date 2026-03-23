@@ -31,5 +31,12 @@ public:
 };
 DUMPER7_ASSERTS_ANIMBP_Flashbang_V2__FAnimBlueprintGeneratedConstantData;
 
+// ScriptStruct ANIMBP_Flashbang_V2.ANIMBP_Flashbang_V2_C.AnimBlueprintGeneratedMutableData
+// 0x0000 (0x0001 - 0x0001)
+struct ANIMBP_Flashbang_V2::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+};
+DUMPER7_ASSERTS_ANIMBP_Flashbang_V2__FAnimBlueprintGeneratedMutableData;
+
 }
 

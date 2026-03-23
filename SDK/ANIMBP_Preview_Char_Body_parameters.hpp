@@ -16,6 +16,24 @@
 namespace SDK::Params
 {
 
+// Function ANIMBP_Preview_Char_Body.ANIMBP_Preview_Char_Body_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct ANIMBP_Preview_Char_Body_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ANIMBP_Preview_Char_Body_C_AnimGraph;
+
+// Function ANIMBP_Preview_Char_Body.ANIMBP_Preview_Char_Body_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct ANIMBP_Preview_Char_Body_C_BlueprintUpdateAnimation final
+{
+public:
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_ANIMBP_Preview_Char_Body_C_BlueprintUpdateAnimation;
+
 // Function ANIMBP_Preview_Char_Body.ANIMBP_Preview_Char_Body_C.ExecuteUbergraph_ANIMBP_Preview_Char_Body
 // 0x0028 (0x0028 - 0x0000)
 struct ANIMBP_Preview_Char_Body_C_ExecuteUbergraph_ANIMBP_Preview_Char_Body final
@@ -33,24 +51,6 @@ public:
 	bool                                          CallFunc_IsSimulatingPhysics_ReturnValue;          // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_ANIMBP_Preview_Char_Body_C_ExecuteUbergraph_ANIMBP_Preview_Char_Body;
-
-// Function ANIMBP_Preview_Char_Body.ANIMBP_Preview_Char_Body_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct ANIMBP_Preview_Char_Body_C_BlueprintUpdateAnimation final
-{
-public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_ANIMBP_Preview_Char_Body_C_BlueprintUpdateAnimation;
-
-// Function ANIMBP_Preview_Char_Body.ANIMBP_Preview_Char_Body_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct ANIMBP_Preview_Char_Body_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-DUMPER7_ASSERTS_ANIMBP_Preview_Char_Body_C_AnimGraph;
 
 }
 

@@ -16,6 +16,24 @@
 namespace SDK::Params
 {
 
+// Function ANIMBP_Preview_Char_Head.ANIMBP_Preview_Char_Head_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct ANIMBP_Preview_Char_Head_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ANIMBP_Preview_Char_Head_C_AnimGraph;
+
+// Function ANIMBP_Preview_Char_Head.ANIMBP_Preview_Char_Head_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct ANIMBP_Preview_Char_Head_C_BlueprintUpdateAnimation final
+{
+public:
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_ANIMBP_Preview_Char_Head_C_BlueprintUpdateAnimation;
+
 // Function ANIMBP_Preview_Char_Head.ANIMBP_Preview_Char_Head_C.ExecuteUbergraph_ANIMBP_Preview_Char_Head
 // 0x0040 (0x0040 - 0x0000)
 struct ANIMBP_Preview_Char_Head_C_ExecuteUbergraph_ANIMBP_Preview_Char_Head final
@@ -34,24 +52,6 @@ public:
 	float                                         K2Node_StructMemberSet___FloatProperty_ImplicitCast; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_ANIMBP_Preview_Char_Head_C_ExecuteUbergraph_ANIMBP_Preview_Char_Head;
-
-// Function ANIMBP_Preview_Char_Head.ANIMBP_Preview_Char_Head_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct ANIMBP_Preview_Char_Head_C_BlueprintUpdateAnimation final
-{
-public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_ANIMBP_Preview_Char_Head_C_BlueprintUpdateAnimation;
-
-// Function ANIMBP_Preview_Char_Head.ANIMBP_Preview_Char_Head_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct ANIMBP_Preview_Char_Head_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-DUMPER7_ASSERTS_ANIMBP_Preview_Char_Head_C_AnimGraph;
 
 }
 

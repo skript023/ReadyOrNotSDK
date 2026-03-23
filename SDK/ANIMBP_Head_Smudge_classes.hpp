@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
-#include "ReadyOrNot_classes.hpp"
 #include "ANIMBP_Head_Smudge_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
+#include "ReadyOrNot_classes.hpp"
 
 
 namespace SDK

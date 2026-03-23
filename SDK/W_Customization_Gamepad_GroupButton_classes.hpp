@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "E_CustomizationGroups_structs.hpp"
-#include "CommonUI_classes.hpp"
 #include "Engine_structs.hpp"
+#include "CommonUI_classes.hpp"
 
 
 namespace SDK

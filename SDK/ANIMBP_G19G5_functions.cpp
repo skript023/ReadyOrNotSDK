@@ -17,50 +17,35 @@
 namespace SDK
 {
 
-// Function ANIMBP_G19G5.ANIMBP_G19G5_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function ANIMBP_G19G5.ANIMBP_G19G5_C.ExecuteUbergraph_ANIMBP_G19G5
+// (Final, UbergraphFunction)
 // Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UANIMBP_G19G5_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+void UANIMBP_G19G5_C::ExecuteUbergraph_ANIMBP_G19G5(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_G19G5_C", "AnimGraph");
+		Func = Class->GetFunction("ANIMBP_G19G5_C", "ExecuteUbergraph_ANIMBP_G19G5");
 
-	Params::ANIMBP_G19G5_C_AnimGraph Parms{};
+	Params::ANIMBP_G19G5_C_ExecuteUbergraph_ANIMBP_G19G5 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 
-// Function ANIMBP_G19G5.ANIMBP_G19G5_C.AnimNotify_DropSpeedReloadMagazine
-// (BlueprintCallable, BlueprintEvent)
+// Function ANIMBP_G19G5.ANIMBP_G19G5_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G19G5_AnimGraphNode_BlendListByBool_60CFA88C4D4AEA81A41BB499B0DCB9F2
+// (BlueprintEvent)
 
-void UANIMBP_G19G5_C::AnimNotify_DropSpeedReloadMagazine()
+void UANIMBP_G19G5_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G19G5_AnimGraphNode_BlendListByBool_60CFA88C4D4AEA81A41BB499B0DCB9F2()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_G19G5_C", "AnimNotify_DropSpeedReloadMagazine");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ANIMBP_G19G5.ANIMBP_G19G5_C.AnimNotify_ShowMag
-// (BlueprintCallable, BlueprintEvent)
-
-void UANIMBP_G19G5_C::AnimNotify_ShowMag()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_G19G5_C", "AnimNotify_ShowMag");
+		Func = Class->GetFunction("ANIMBP_G19G5_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G19G5_AnimGraphNode_BlendListByBool_60CFA88C4D4AEA81A41BB499B0DCB9F2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -86,37 +71,52 @@ void UANIMBP_G19G5_C::BlueprintUpdateAnimation(float DeltaTimeX)
 }
 
 
-// Function ANIMBP_G19G5.ANIMBP_G19G5_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G19G5_AnimGraphNode_BlendListByBool_60CFA88C4D4AEA81A41BB499B0DCB9F2
-// (BlueprintEvent)
+// Function ANIMBP_G19G5.ANIMBP_G19G5_C.AnimNotify_ShowMag
+// (BlueprintCallable, BlueprintEvent)
 
-void UANIMBP_G19G5_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G19G5_AnimGraphNode_BlendListByBool_60CFA88C4D4AEA81A41BB499B0DCB9F2()
+void UANIMBP_G19G5_C::AnimNotify_ShowMag()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_G19G5_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G19G5_AnimGraphNode_BlendListByBool_60CFA88C4D4AEA81A41BB499B0DCB9F2");
+		Func = Class->GetFunction("ANIMBP_G19G5_C", "AnimNotify_ShowMag");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function ANIMBP_G19G5.ANIMBP_G19G5_C.ExecuteUbergraph_ANIMBP_G19G5
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function ANIMBP_G19G5.ANIMBP_G19G5_C.AnimNotify_DropSpeedReloadMagazine
+// (BlueprintCallable, BlueprintEvent)
 
-void UANIMBP_G19G5_C::ExecuteUbergraph_ANIMBP_G19G5(int32 EntryPoint)
+void UANIMBP_G19G5_C::AnimNotify_DropSpeedReloadMagazine()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_G19G5_C", "ExecuteUbergraph_ANIMBP_G19G5");
+		Func = Class->GetFunction("ANIMBP_G19G5_C", "AnimNotify_DropSpeedReloadMagazine");
 
-	Params::ANIMBP_G19G5_C_ExecuteUbergraph_ANIMBP_G19G5 Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function ANIMBP_G19G5.ANIMBP_G19G5_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+
+void UANIMBP_G19G5_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ANIMBP_G19G5_C", "AnimGraph");
+
+	Params::ANIMBP_G19G5_C_AnimGraph Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 }

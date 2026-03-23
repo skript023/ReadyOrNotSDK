@@ -17,17 +17,6 @@
 namespace SDK
 {
 
-// ScriptStruct ANIMBP_Preview_Char_Head.ANIMBP_Preview_Char_Head_C.AnimBlueprintGeneratedMutableData
-// 0x000F (0x0010 - 0x0001)
-struct ANIMBP_Preview_Char_Head::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-public:
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         __FloatProperty;                                   // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAnimSequenceBase*                      __AnimSequenceBase_0;                              // 0x0008(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_ANIMBP_Preview_Char_Head__FAnimBlueprintGeneratedMutableData;
-
 // ScriptStruct ANIMBP_Preview_Char_Head.ANIMBP_Preview_Char_Head_C.AnimBlueprintGeneratedConstantData
 // 0x0107 (0x0108 - 0x0001)
 struct ANIMBP_Preview_Char_Head::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
@@ -50,6 +39,17 @@ public:
 	struct FAnimSubsystem_Base                    AnimBlueprintExtension_Base;                       // 0x00F0(0x0018)()
 };
 DUMPER7_ASSERTS_ANIMBP_Preview_Char_Head__FAnimBlueprintGeneratedConstantData;
+
+// ScriptStruct ANIMBP_Preview_Char_Head.ANIMBP_Preview_Char_Head_C.AnimBlueprintGeneratedMutableData
+// 0x000F (0x0010 - 0x0001)
+struct ANIMBP_Preview_Char_Head::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+public:
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         __FloatProperty;                                   // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimSequenceBase*                      __AnimSequenceBase_0;                              // 0x0008(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_ANIMBP_Preview_Char_Head__FAnimBlueprintGeneratedMutableData;
 
 }
 

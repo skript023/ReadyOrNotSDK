@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function ANIMBP_C2_Clacker.ANIMBP_C2_Clacker_C.ExecuteUbergraph_ANIMBP_C2_Clacker
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UANIMBP_C2_Clacker_C::ExecuteUbergraph_ANIMBP_C2_Clacker(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_C2_Clacker_C", "ExecuteUbergraph_ANIMBP_C2_Clacker");
-
-	Params::ANIMBP_C2_Clacker_C_ExecuteUbergraph_ANIMBP_C2_Clacker Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function ANIMBP_C2_Clacker.ANIMBP_C2_Clacker_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -55,6 +35,26 @@ void UANIMBP_C2_Clacker_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 
 	if (AnimGraph_0 != nullptr)
 		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
+}
+
+
+// Function ANIMBP_C2_Clacker.ANIMBP_C2_Clacker_C.ExecuteUbergraph_ANIMBP_C2_Clacker
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UANIMBP_C2_Clacker_C::ExecuteUbergraph_ANIMBP_C2_Clacker(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ANIMBP_C2_Clacker_C", "ExecuteUbergraph_ANIMBP_C2_Clacker");
+
+	Params::ANIMBP_C2_Clacker_C_ExecuteUbergraph_ANIMBP_C2_Clacker Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

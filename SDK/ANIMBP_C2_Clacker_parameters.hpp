@@ -16,15 +16,6 @@
 namespace SDK::Params
 {
 
-// Function ANIMBP_C2_Clacker.ANIMBP_C2_Clacker_C.ExecuteUbergraph_ANIMBP_C2_Clacker
-// 0x0004 (0x0004 - 0x0000)
-struct ANIMBP_C2_Clacker_C_ExecuteUbergraph_ANIMBP_C2_Clacker final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_ANIMBP_C2_Clacker_C_ExecuteUbergraph_ANIMBP_C2_Clacker;
-
 // Function ANIMBP_C2_Clacker.ANIMBP_C2_Clacker_C.AnimGraph
 // 0x0010 (0x0010 - 0x0000)
 struct ANIMBP_C2_Clacker_C_AnimGraph final
@@ -33,6 +24,15 @@ public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
 DUMPER7_ASSERTS_ANIMBP_C2_Clacker_C_AnimGraph;
+
+// Function ANIMBP_C2_Clacker.ANIMBP_C2_Clacker_C.ExecuteUbergraph_ANIMBP_C2_Clacker
+// 0x0004 (0x0004 - 0x0000)
+struct ANIMBP_C2_Clacker_C_ExecuteUbergraph_ANIMBP_C2_Clacker final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_ANIMBP_C2_Clacker_C_ExecuteUbergraph_ANIMBP_C2_Clacker;
 
 }
 

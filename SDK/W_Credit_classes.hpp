@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "ReadyOrNot_classes.hpp"
 #include "ST_Style_Text_structs.hpp"
-#include "ST_Credit_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ST_Credit_structs.hpp"
+#include "ReadyOrNot_classes.hpp"
 
 
 namespace SDK

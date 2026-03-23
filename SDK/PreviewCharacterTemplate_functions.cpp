@@ -17,45 +17,23 @@
 namespace SDK
 {
 
-// Function PreviewCharacterTemplate.PreviewCharacterTemplate_C.VeryImportantHalloweenCheck
-// (BlueprintCallable, BlueprintEvent)
+// Function PreviewCharacterTemplate.PreviewCharacterTemplate_C.ExecuteUbergraph_PreviewCharacterTemplate
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APreviewCharacterTemplate_C::VeryImportantHalloweenCheck()
+void APreviewCharacterTemplate_C::ExecuteUbergraph_PreviewCharacterTemplate(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PreviewCharacterTemplate_C", "VeryImportantHalloweenCheck");
+		Func = Class->GetFunction("PreviewCharacterTemplate_C", "ExecuteUbergraph_PreviewCharacterTemplate");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::PreviewCharacterTemplate_C_ExecuteUbergraph_PreviewCharacterTemplate Parms{};
 
+	Parms.EntryPoint = EntryPoint;
 
-// Function PreviewCharacterTemplate.PreviewCharacterTemplate_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void APreviewCharacterTemplate_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PreviewCharacterTemplate_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PreviewCharacterTemplate.PreviewCharacterTemplate_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void APreviewCharacterTemplate_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PreviewCharacterTemplate_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -81,23 +59,45 @@ void APreviewCharacterTemplate_C::PlayLipSyncAnimation(const class FString& Spea
 }
 
 
-// Function PreviewCharacterTemplate.PreviewCharacterTemplate_C.ExecuteUbergraph_PreviewCharacterTemplate
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function PreviewCharacterTemplate.PreviewCharacterTemplate_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void APreviewCharacterTemplate_C::ExecuteUbergraph_PreviewCharacterTemplate(int32 EntryPoint)
+void APreviewCharacterTemplate_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PreviewCharacterTemplate_C", "ExecuteUbergraph_PreviewCharacterTemplate");
+		Func = Class->GetFunction("PreviewCharacterTemplate_C", "ReceiveBeginPlay");
 
-	Params::PreviewCharacterTemplate_C_ExecuteUbergraph_PreviewCharacterTemplate Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function PreviewCharacterTemplate.PreviewCharacterTemplate_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void APreviewCharacterTemplate_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PreviewCharacterTemplate_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function PreviewCharacterTemplate.PreviewCharacterTemplate_C.VeryImportantHalloweenCheck
+// (BlueprintCallable, BlueprintEvent)
+
+void APreviewCharacterTemplate_C::VeryImportantHalloweenCheck()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PreviewCharacterTemplate_C", "VeryImportantHalloweenCheck");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -17,6 +17,60 @@
 namespace SDK
 {
 
+// Function AIAction_StandingSurrender_Moving.AIAction_StandingSurrender_Moving_C.Tick_Blueprint
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAIAction_StandingSurrender_Moving_C::Tick_Blueprint(float DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIAction_StandingSurrender_Moving_C", "Tick_Blueprint");
+
+	Params::AIAction_StandingSurrender_Moving_C_Tick_Blueprint Parms{};
+
+	Parms.DeltaTime = DeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AIAction_StandingSurrender_Moving.AIAction_StandingSurrender_Moving_C.PlayComplianceVO
+// (BlueprintCallable, BlueprintEvent)
+
+void UAIAction_StandingSurrender_Moving_C::PlayComplianceVO()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIAction_StandingSurrender_Moving_C", "PlayComplianceVO");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AIAction_StandingSurrender_Moving.AIAction_StandingSurrender_Moving_C.InitAction_Blueprint
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class ACyberneticController*            Controller                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UAIAction_StandingSurrender_Moving_C::InitAction_Blueprint(class ACyberneticController* Controller)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIAction_StandingSurrender_Moving_C", "InitAction_Blueprint");
+
+	Params::AIAction_StandingSurrender_Moving_C_InitAction_Blueprint Parms{};
+
+	Parms.Controller = Controller;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AIAction_StandingSurrender_Moving.AIAction_StandingSurrender_Moving_C.GetComplianceVoiceOver
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -89,57 +143,23 @@ void UAIAction_StandingSurrender_Moving_C::BeginAction_Blueprint()
 }
 
 
-// Function AIAction_StandingSurrender_Moving.AIAction_StandingSurrender_Moving_C.InitAction_Blueprint
-// (Event, Protected, BlueprintEvent)
+// Function AIAction_StandingSurrender_Moving.AIAction_StandingSurrender_Moving_C.ShouldPerformAction
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class ACyberneticController*            Controller                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAIAction_StandingSurrender_Moving_C::InitAction_Blueprint(class ACyberneticController* Controller)
+bool UAIAction_StandingSurrender_Moving_C::ShouldPerformAction() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AIAction_StandingSurrender_Moving_C", "InitAction_Blueprint");
+		Func = Class->GetFunction("AIAction_StandingSurrender_Moving_C", "ShouldPerformAction");
 
-	Params::AIAction_StandingSurrender_Moving_C_InitAction_Blueprint Parms{};
-
-	Parms.Controller = Controller;
+	Params::AIAction_StandingSurrender_Moving_C_ShouldPerformAction Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
-
-// Function AIAction_StandingSurrender_Moving.AIAction_StandingSurrender_Moving_C.PlayComplianceVO
-// (BlueprintCallable, BlueprintEvent)
-
-void UAIAction_StandingSurrender_Moving_C::PlayComplianceVO()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAction_StandingSurrender_Moving_C", "PlayComplianceVO");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AIAction_StandingSurrender_Moving.AIAction_StandingSurrender_Moving_C.Tick_Blueprint
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAIAction_StandingSurrender_Moving_C::Tick_Blueprint(float DeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAction_StandingSurrender_Moving_C", "Tick_Blueprint");
-
-	Params::AIAction_StandingSurrender_Moving_C_Tick_Blueprint Parms{};
-
-	Parms.DeltaTime = DeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
+	return Parms.ReturnValue;
 }
 
 
@@ -156,26 +176,6 @@ class FName UAIAction_StandingSurrender_Moving_C::GetMoveStyleOverride() const
 		Func = Class->GetFunction("AIAction_StandingSurrender_Moving_C", "GetMoveStyleOverride");
 
 	Params::AIAction_StandingSurrender_Moving_C_GetMoveStyleOverride Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIAction_StandingSurrender_Moving.AIAction_StandingSurrender_Moving_C.ShouldPerformAction
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool UAIAction_StandingSurrender_Moving_C::ShouldPerformAction() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAction_StandingSurrender_Moving_C", "ShouldPerformAction");
-
-	Params::AIAction_StandingSurrender_Moving_C_ShouldPerformAction Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

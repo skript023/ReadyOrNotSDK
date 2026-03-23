@@ -39,5 +39,12 @@ public:
 };
 DUMPER7_ASSERTS_ANIMBP_Taser7__FAnimBlueprintGeneratedConstantData;
 
+// ScriptStruct ANIMBP_Taser7.ANIMBP_Taser7_C.AnimBlueprintGeneratedMutableData
+// 0x0000 (0x0001 - 0x0001)
+struct ANIMBP_Taser7::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+};
+DUMPER7_ASSERTS_ANIMBP_Taser7__FAnimBlueprintGeneratedMutableData;
+
 }
 

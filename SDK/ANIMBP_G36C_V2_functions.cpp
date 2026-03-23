@@ -17,6 +17,54 @@
 namespace SDK
 {
 
+// Function ANIMBP_G36C_V2.ANIMBP_G36C_V2_C.ExecuteUbergraph_ANIMBP_G36C_V2
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UANIMBP_G36C_V2_C::ExecuteUbergraph_ANIMBP_G36C_V2(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ANIMBP_G36C_V2_C", "ExecuteUbergraph_ANIMBP_G36C_V2");
+
+	Params::ANIMBP_G36C_V2_C_ExecuteUbergraph_ANIMBP_G36C_V2 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ANIMBP_G36C_V2.ANIMBP_G36C_V2_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G36C_V2_AnimGraphNode_ModifyBone_8A57EB234881555B82A504AAEFB0CFE3
+// (BlueprintEvent)
+
+void UANIMBP_G36C_V2_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G36C_V2_AnimGraphNode_ModifyBone_8A57EB234881555B82A504AAEFB0CFE3()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ANIMBP_G36C_V2_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G36C_V2_AnimGraphNode_ModifyBone_8A57EB234881555B82A504AAEFB0CFE3");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ANIMBP_G36C_V2.ANIMBP_G36C_V2_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G36C_V2_AnimGraphNode_BlendListByBool_62E8109E4C91B45DB1E8809CEBCEBE2A
+// (BlueprintEvent)
+
+void UANIMBP_G36C_V2_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G36C_V2_AnimGraphNode_BlendListByBool_62E8109E4C91B45DB1E8809CEBCEBE2A()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ANIMBP_G36C_V2_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G36C_V2_AnimGraphNode_BlendListByBool_62E8109E4C91B45DB1E8809CEBCEBE2A");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function ANIMBP_G36C_V2.ANIMBP_G36C_V2_C.BlueprintUpdateAnimation
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -83,54 +131,6 @@ void UANIMBP_G36C_V2_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 
 	if (AnimGraph_0 != nullptr)
 		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
-}
-
-
-// Function ANIMBP_G36C_V2.ANIMBP_G36C_V2_C.ExecuteUbergraph_ANIMBP_G36C_V2
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UANIMBP_G36C_V2_C::ExecuteUbergraph_ANIMBP_G36C_V2(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_G36C_V2_C", "ExecuteUbergraph_ANIMBP_G36C_V2");
-
-	Params::ANIMBP_G36C_V2_C_ExecuteUbergraph_ANIMBP_G36C_V2 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ANIMBP_G36C_V2.ANIMBP_G36C_V2_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G36C_V2_AnimGraphNode_ModifyBone_8A57EB234881555B82A504AAEFB0CFE3
-// (BlueprintEvent)
-
-void UANIMBP_G36C_V2_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G36C_V2_AnimGraphNode_ModifyBone_8A57EB234881555B82A504AAEFB0CFE3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_G36C_V2_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G36C_V2_AnimGraphNode_ModifyBone_8A57EB234881555B82A504AAEFB0CFE3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ANIMBP_G36C_V2.ANIMBP_G36C_V2_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G36C_V2_AnimGraphNode_BlendListByBool_62E8109E4C91B45DB1E8809CEBCEBE2A
-// (BlueprintEvent)
-
-void UANIMBP_G36C_V2_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G36C_V2_AnimGraphNode_BlendListByBool_62E8109E4C91B45DB1E8809CEBCEBE2A()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_G36C_V2_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G36C_V2_AnimGraphNode_BlendListByBool_62E8109E4C91B45DB1E8809CEBCEBE2A");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

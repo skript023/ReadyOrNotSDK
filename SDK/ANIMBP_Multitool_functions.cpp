@@ -17,23 +17,24 @@
 namespace SDK
 {
 
-// Function ANIMBP_Multitool.ANIMBP_Multitool_C.ExecuteUbergraph_ANIMBP_Multitool
-// (Final, UbergraphFunction)
+// Function ANIMBP_Multitool.ANIMBP_Multitool_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
-void UANIMBP_Multitool_C::ExecuteUbergraph_ANIMBP_Multitool(int32 EntryPoint)
+void UANIMBP_Multitool_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_Multitool_C", "ExecuteUbergraph_ANIMBP_Multitool");
+		Func = Class->GetFunction("ANIMBP_Multitool_C", "AnimGraph");
 
-	Params::ANIMBP_Multitool_C_ExecuteUbergraph_ANIMBP_Multitool Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::ANIMBP_Multitool_C_AnimGraph Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 
@@ -57,24 +58,23 @@ void UANIMBP_Multitool_C::BlueprintUpdateAnimation(float DeltaTimeX)
 }
 
 
-// Function ANIMBP_Multitool.ANIMBP_Multitool_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function ANIMBP_Multitool.ANIMBP_Multitool_C.ExecuteUbergraph_ANIMBP_Multitool
+// (Final, UbergraphFunction)
 // Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UANIMBP_Multitool_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+void UANIMBP_Multitool_C::ExecuteUbergraph_ANIMBP_Multitool(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_Multitool_C", "AnimGraph");
+		Func = Class->GetFunction("ANIMBP_Multitool_C", "ExecuteUbergraph_ANIMBP_Multitool");
 
-	Params::ANIMBP_Multitool_C_AnimGraph Parms{};
+	Params::ANIMBP_Multitool_C_ExecuteUbergraph_ANIMBP_Multitool Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 }

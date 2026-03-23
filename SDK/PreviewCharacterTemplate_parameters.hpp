@@ -14,30 +14,6 @@
 namespace SDK::Params
 {
 
-// Function PreviewCharacterTemplate.PreviewCharacterTemplate_C.UserConstructionScript
-// 0x0003 (0x0003 - 0x0000)
-struct PreviewCharacterTemplate_C_UserConstructionScript final
-{
-public:
-	bool                                          CallFunc_IsHalloween_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_1;       // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_PreviewCharacterTemplate_C_UserConstructionScript;
-
-// Function PreviewCharacterTemplate.PreviewCharacterTemplate_C.PlayLipSyncAnimation
-// 0x0038 (0x0038 - 0x0000)
-struct PreviewCharacterTemplate_C_PlayLipSyncAnimation final
-{
-public:
-	class FString                                 Speaker;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 VoiceLine;                                         // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UStaticCharacterFaceAnimInstance*       K2Node_DynamicCast_AsStatic_Character_Face_Anim_Instance; // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_PreviewCharacterTemplate_C_PlayLipSyncAnimation;
-
 // Function PreviewCharacterTemplate.PreviewCharacterTemplate_C.ExecuteUbergraph_PreviewCharacterTemplate
 // 0x0018 (0x0018 - 0x0000)
 struct PreviewCharacterTemplate_C_ExecuteUbergraph_PreviewCharacterTemplate final
@@ -52,6 +28,30 @@ public:
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_1;       // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_PreviewCharacterTemplate_C_ExecuteUbergraph_PreviewCharacterTemplate;
+
+// Function PreviewCharacterTemplate.PreviewCharacterTemplate_C.PlayLipSyncAnimation
+// 0x0038 (0x0038 - 0x0000)
+struct PreviewCharacterTemplate_C_PlayLipSyncAnimation final
+{
+public:
+	class FString                                 Speaker;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 VoiceLine;                                         // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UStaticCharacterFaceAnimInstance*       K2Node_DynamicCast_AsStatic_Character_Face_Anim_Instance; // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PreviewCharacterTemplate_C_PlayLipSyncAnimation;
+
+// Function PreviewCharacterTemplate.PreviewCharacterTemplate_C.UserConstructionScript
+// 0x0003 (0x0003 - 0x0000)
+struct PreviewCharacterTemplate_C_UserConstructionScript final
+{
+public:
+	bool                                          CallFunc_IsHalloween_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_1;       // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_PreviewCharacterTemplate_C_UserConstructionScript;
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "ANIMBP_G19G5_structs.hpp"
 #include "Engine_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
-#include "ANIMBP_G19G5_structs.hpp"
 #include "ReadyOrNot_classes.hpp"
 
 
@@ -49,12 +49,12 @@ public:
 	double                                        ScopeAdjustAlpha;                                  // 0x09B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void AnimNotify_DropSpeedReloadMagazine();
-	void AnimNotify_ShowMag();
-	void BlueprintUpdateAnimation(float DeltaTimeX);
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G19G5_AnimGraphNode_BlendListByBool_60CFA88C4D4AEA81A41BB499B0DCB9F2();
 	void ExecuteUbergraph_ANIMBP_G19G5(int32 EntryPoint);
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_G19G5_AnimGraphNode_BlendListByBool_60CFA88C4D4AEA81A41BB499B0DCB9F2();
+	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void AnimNotify_ShowMag();
+	void AnimNotify_DropSpeedReloadMagazine();
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()

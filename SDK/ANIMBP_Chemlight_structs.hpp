@@ -16,13 +16,6 @@
 namespace SDK
 {
 
-// ScriptStruct ANIMBP_Chemlight.ANIMBP_Chemlight_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ANIMBP_Chemlight::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
-DUMPER7_ASSERTS_ANIMBP_Chemlight__FAnimBlueprintGeneratedMutableData;
-
 // ScriptStruct ANIMBP_Chemlight.ANIMBP_Chemlight_C.AnimBlueprintGeneratedConstantData
 // 0x010F (0x0110 - 0x0001)
 struct ANIMBP_Chemlight::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
@@ -47,6 +40,13 @@ public:
 	struct FAnimSubsystem_Base                    AnimBlueprintExtension_Base;                       // 0x00F8(0x0018)()
 };
 DUMPER7_ASSERTS_ANIMBP_Chemlight__FAnimBlueprintGeneratedConstantData;
+
+// ScriptStruct ANIMBP_Chemlight.ANIMBP_Chemlight_C.AnimBlueprintGeneratedMutableData
+// 0x0000 (0x0001 - 0x0001)
+struct ANIMBP_Chemlight::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+};
+DUMPER7_ASSERTS_ANIMBP_Chemlight__FAnimBlueprintGeneratedMutableData;
 
 }
 
