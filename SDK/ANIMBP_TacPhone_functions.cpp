@@ -17,44 +17,24 @@
 namespace SDK
 {
 
-// Function ANIMBP_TacPhone.ANIMBP_TacPhone_C.Get Player Character
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function ANIMBP_TacPhone.ANIMBP_TacPhone_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APlayerCharacter**                PlayerCharacter                                        (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
-void UANIMBP_TacPhone_C::Get_Player_Character(class APlayerCharacter** PlayerCharacter)
+void UANIMBP_TacPhone_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_TacPhone_C", "Get Player Character");
+		Func = Class->GetFunction("ANIMBP_TacPhone_C", "AnimGraph");
 
-	Params::ANIMBP_TacPhone_C_Get_Player_Character Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PlayerCharacter != nullptr)
-		*PlayerCharacter = Parms.PlayerCharacter;
-}
-
-
-// Function ANIMBP_TacPhone.ANIMBP_TacPhone_C.ExecuteUbergraph_ANIMBP_TacPhone
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UANIMBP_TacPhone_C::ExecuteUbergraph_ANIMBP_TacPhone(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_TacPhone_C", "ExecuteUbergraph_ANIMBP_TacPhone");
-
-	Params::ANIMBP_TacPhone_C_ExecuteUbergraph_ANIMBP_TacPhone Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::ANIMBP_TacPhone_C_AnimGraph Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 
@@ -78,24 +58,44 @@ void UANIMBP_TacPhone_C::BlueprintUpdateAnimation(float DeltaTimeX)
 }
 
 
-// Function ANIMBP_TacPhone.ANIMBP_TacPhone_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function ANIMBP_TacPhone.ANIMBP_TacPhone_C.ExecuteUbergraph_ANIMBP_TacPhone
+// (Final, UbergraphFunction)
 // Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UANIMBP_TacPhone_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+void UANIMBP_TacPhone_C::ExecuteUbergraph_ANIMBP_TacPhone(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_TacPhone_C", "AnimGraph");
+		Func = Class->GetFunction("ANIMBP_TacPhone_C", "ExecuteUbergraph_ANIMBP_TacPhone");
 
-	Params::ANIMBP_TacPhone_C_AnimGraph Parms{};
+	Params::ANIMBP_TacPhone_C_ExecuteUbergraph_ANIMBP_TacPhone Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ANIMBP_TacPhone.ANIMBP_TacPhone_C.Get Player Character
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APlayerCharacter**                PlayerCharacter                                        (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UANIMBP_TacPhone_C::Get_Player_Character(class APlayerCharacter** PlayerCharacter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ANIMBP_TacPhone_C", "Get Player Character");
+
+	Params::ANIMBP_TacPhone_C_Get_Player_Character Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
+	if (PlayerCharacter != nullptr)
+		*PlayerCharacter = Parms.PlayerCharacter;
 }
 
 }

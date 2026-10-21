@@ -19,41 +19,6 @@
 namespace SDK::Params
 {
 
-// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.Tick
-// 0x003C (0x003C - 0x0000)
-struct W_WorldMapDisplayOnly_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_W_WorldMapDisplayOnly_C_Tick;
-
-// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.OnMouseMove
-// 0x0238 (0x0238 - 0x0000)
-struct W_WorldMapDisplayOnly_C_OnMouseMove final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0168(0x00B8)()
-	struct FVector2D                              CallFunc_PointerEvent_GetCursorDelta_ReturnValue;  // 0x0220(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_Vector2DVector2D_ReturnValue;  // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_W_WorldMapDisplayOnly_C_OnMouseMove;
-
-// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.OnDragDetected
-// 0x00B8 (0x00B8 - 0x0000)
-struct W_WorldMapDisplayOnly_C_OnDragDetected final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0078)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	class UDragDropOperation*                     Operation;                                         // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_W_WorldMapDisplayOnly_C_OnDragDetected;
-
 // Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.ExecuteUbergraph_W_WorldMapDisplayOnly
 // 0x1380 (0x1380 - 0x0000)
 struct W_WorldMapDisplayOnly_C_ExecuteUbergraph_W_WorldMapDisplayOnly final
@@ -101,6 +66,41 @@ public:
 	float                                         CallFunc_ConvertFloatToStringMinutes_Detail_Val_ImplicitCast; // 0x1378(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_W_WorldMapDisplayOnly_C_ExecuteUbergraph_W_WorldMapDisplayOnly;
+
+// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.OnDragDetected
+// 0x00B8 (0x00B8 - 0x0000)
+struct W_WorldMapDisplayOnly_C_OnDragDetected final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0078)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class UDragDropOperation*                     Operation;                                         // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_W_WorldMapDisplayOnly_C_OnDragDetected;
+
+// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.OnMouseMove
+// 0x0238 (0x0238 - 0x0000)
+struct W_WorldMapDisplayOnly_C_OnMouseMove final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0168(0x00B8)()
+	struct FVector2D                              CallFunc_PointerEvent_GetCursorDelta_ReturnValue;  // 0x0220(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_Vector2DVector2D_ReturnValue;  // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_W_WorldMapDisplayOnly_C_OnMouseMove;
+
+// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.Tick
+// 0x003C (0x003C - 0x0000)
+struct W_WorldMapDisplayOnly_C_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_W_WorldMapDisplayOnly_C_Tick;
 
 }
 

@@ -73,33 +73,6 @@ public:
 };
 DUMPER7_ASSERTS_FGameplayTag;
 
-// ScriptStruct GameplayTags.GameplayTagRedirect
-// 0x0010 (0x0010 - 0x0000)
-struct FGameplayTagRedirect final
-{
-public:
-	class FName                                   OldTagName;                                        // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   NewTagName;                                        // 0x0008(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FGameplayTagRedirect;
-
-// ScriptStruct GameplayTags.GameplayTagContainer
-// 0x0020 (0x0020 - 0x0000)
-struct FGameplayTagContainer final
-{
-public:
-	TArray<struct FGameplayTag>                   GameplayTags;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, EditConst, SaveGame, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FGameplayTag>                   ParentTags;                                        // 0x0010(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
-};
-DUMPER7_ASSERTS_FGameplayTagContainer;
-
-// ScriptStruct GameplayTags.GameplayTagNetSerializerConfig
-// 0x0000 (0x0010 - 0x0010)
-struct FGameplayTagNetSerializerConfig final : public FNetSerializerConfig
-{
-};
-DUMPER7_ASSERTS_FGameplayTagNetSerializerConfig;
-
 // ScriptStruct GameplayTags.GameplayTagQuery
 // 0x0048 (0x0048 - 0x0000)
 struct FGameplayTagQuery final
@@ -113,6 +86,16 @@ public:
 	class FString                                 AutoDescription;                                   // 0x0038(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
 DUMPER7_ASSERTS_FGameplayTagQuery;
+
+// ScriptStruct GameplayTags.GameplayTagContainer
+// 0x0020 (0x0020 - 0x0000)
+struct FGameplayTagContainer final
+{
+public:
+	TArray<struct FGameplayTag>                   GameplayTags;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, EditConst, SaveGame, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FGameplayTag>                   ParentTags;                                        // 0x0010(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
+};
+DUMPER7_ASSERTS_FGameplayTagContainer;
 
 // ScriptStruct GameplayTags.GameplayTagContainerNetSerializerSerializationHelper
 // 0x0010 (0x0010 - 0x0000)
@@ -138,6 +121,23 @@ struct FGameplayTagContainerNetSerializerConfig final : public FNetSerializerCon
 {
 };
 DUMPER7_ASSERTS_FGameplayTagContainerNetSerializerConfig;
+
+// ScriptStruct GameplayTags.GameplayTagNetSerializerConfig
+// 0x0000 (0x0010 - 0x0010)
+struct FGameplayTagNetSerializerConfig final : public FNetSerializerConfig
+{
+};
+DUMPER7_ASSERTS_FGameplayTagNetSerializerConfig;
+
+// ScriptStruct GameplayTags.GameplayTagRedirect
+// 0x0010 (0x0010 - 0x0000)
+struct FGameplayTagRedirect final
+{
+public:
+	class FName                                   OldTagName;                                        // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   NewTagName;                                        // 0x0008(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FGameplayTagRedirect;
 
 // ScriptStruct GameplayTags.GameplayTagTableRow
 // 0x0018 (0x0020 - 0x0008)

@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function BP_UI_PlanningMap_Marker.BP_UI_PlanningMap_Marker_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
-
-void UBP_UI_PlanningMap_Marker_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_Marker_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_UI_PlanningMap_Marker.BP_UI_PlanningMap_Marker_C.ExecuteUbergraph_BP_UI_PlanningMap_Marker
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void UBP_UI_PlanningMap_Marker_C::ExecuteUbergraph_BP_UI_PlanningMap_Marker(int3
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_UI_PlanningMap_Marker.BP_UI_PlanningMap_Marker_C.ReceiveBeginPlay
+// (Event, Public, BlueprintEvent)
+
+void UBP_UI_PlanningMap_Marker_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UI_PlanningMap_Marker_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

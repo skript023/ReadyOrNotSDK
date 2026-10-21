@@ -28,10 +28,10 @@ public:
 	struct FVector                                GoalVector;                                        // 0x0268(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void StartActivity_Blueprint(class AAIController* Owner);
-	void RequestCombatMove_Blueprint(float DeltaTime);
-	void GetTargetPos(struct FVector* TargetPosition);
 	void ExecuteUbergraph_AdvanceToEnemyPosition(int32 EntryPoint);
+	void GetTargetPos(struct FVector* TargetPosition);
+	void RequestCombatMove_Blueprint(float DeltaTime);
+	void StartActivity_Blueprint(class AAIController* Owner);
 
 public:
 	static class UClass* StaticClass()

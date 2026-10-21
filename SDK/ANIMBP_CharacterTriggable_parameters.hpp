@@ -17,23 +17,26 @@
 namespace SDK::Params
 {
 
-// Function ANIMBP_CharacterTriggable.ANIMBP_CharacterTriggable_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct ANIMBP_CharacterTriggable_C_AnimGraph final
+// Function ANIMBP_CharacterTriggable.ANIMBP_CharacterTriggable_C.Get Look at Position
+// 0x00B0 (0x00B0 - 0x0000)
+struct ANIMBP_CharacterTriggable_C_Get_Look_at_Position final
 {
 public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerCharacter*                       Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ReturnValue;                                       // 0x0010(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0060(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLocalPlayer_ReturnValue;                // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                K2Node_Select_Default;                             // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VectorSpringInterp_ReturnValue;           // 0x0098(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_ANIMBP_CharacterTriggable_C_AnimGraph;
-
-// Function ANIMBP_CharacterTriggable.ANIMBP_CharacterTriggable_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct ANIMBP_CharacterTriggable_C_BlueprintUpdateAnimation final
-{
-public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_ANIMBP_CharacterTriggable_C_BlueprintUpdateAnimation;
+DUMPER7_ASSERTS_ANIMBP_CharacterTriggable_C_Get_Look_at_Position;
 
 // Function ANIMBP_CharacterTriggable.ANIMBP_CharacterTriggable_C.ExecuteUbergraph_ANIMBP_CharacterTriggable
 // 0x0058 (0x0058 - 0x0000)
@@ -59,26 +62,23 @@ public:
 };
 DUMPER7_ASSERTS_ANIMBP_CharacterTriggable_C_ExecuteUbergraph_ANIMBP_CharacterTriggable;
 
-// Function ANIMBP_CharacterTriggable.ANIMBP_CharacterTriggable_C.Get Look at Position
-// 0x00B0 (0x00B0 - 0x0000)
-struct ANIMBP_CharacterTriggable_C_Get_Look_at_Position final
+// Function ANIMBP_CharacterTriggable.ANIMBP_CharacterTriggable_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct ANIMBP_CharacterTriggable_C_BlueprintUpdateAnimation final
 {
 public:
-	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerCharacter*                       Player;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                ReturnValue;                                       // 0x0010(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0060(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLocalPlayer_ReturnValue;                // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                K2Node_Select_Default;                             // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_VectorSpringInterp_ReturnValue;           // 0x0098(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_ANIMBP_CharacterTriggable_C_Get_Look_at_Position;
+DUMPER7_ASSERTS_ANIMBP_CharacterTriggable_C_BlueprintUpdateAnimation;
+
+// Function ANIMBP_CharacterTriggable.ANIMBP_CharacterTriggable_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct ANIMBP_CharacterTriggable_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ANIMBP_CharacterTriggable_C_AnimGraph;
 
 }
 

@@ -17,6 +17,40 @@
 namespace SDK
 {
 
+// Function Sound_CharacterTrigger_BP.Sound_CharacterTrigger_BP_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ASound_CharacterTrigger_BP_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Sound_CharacterTrigger_BP_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Sound_CharacterTrigger_BP.Sound_CharacterTrigger_BP_C.ExecuteUbergraph_Sound_CharacterTrigger_BP
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASound_CharacterTrigger_BP_C::ExecuteUbergraph_Sound_CharacterTrigger_BP(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Sound_CharacterTrigger_BP_C", "ExecuteUbergraph_Sound_CharacterTrigger_BP");
+
+	Params::Sound_CharacterTrigger_BP_C_ExecuteUbergraph_Sound_CharacterTrigger_BP Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Sound_CharacterTrigger_BP.Sound_CharacterTrigger_BP_C.BndEvt__Sound_CharacterTrigger_BP_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -44,40 +78,6 @@ void ASound_CharacterTrigger_BP_C::BndEvt__Sound_CharacterTrigger_BP_Box_K2Node_
 	Parms.SweepResult = std::move(SweepResult);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Sound_CharacterTrigger_BP.Sound_CharacterTrigger_BP_C.ExecuteUbergraph_Sound_CharacterTrigger_BP
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ASound_CharacterTrigger_BP_C::ExecuteUbergraph_Sound_CharacterTrigger_BP(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Sound_CharacterTrigger_BP_C", "ExecuteUbergraph_Sound_CharacterTrigger_BP");
-
-	Params::Sound_CharacterTrigger_BP_C_ExecuteUbergraph_Sound_CharacterTrigger_BP Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Sound_CharacterTrigger_BP.Sound_CharacterTrigger_BP_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ASound_CharacterTrigger_BP_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Sound_CharacterTrigger_BP_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -28,9 +28,9 @@ public:
 	class ACyberneticCharacter*                   Laurie;                                            // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnAIAdded_Blueprint(class ACyberneticCharacter* Character);
-	void ExecuteUbergraph_Faction_USVeterans(int32 EntryPoint);
 	void AlertOtherSuspectsInTeam_Blueprint(class ASuspectCharacter* suspect, class AReadyOrNotCharacter* Enemy);
+	void ExecuteUbergraph_Faction_USVeterans(int32 EntryPoint);
+	void OnAIAdded_Blueprint(class ACyberneticCharacter* Character);
 
 public:
 	static class UClass* StaticClass()

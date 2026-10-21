@@ -37,6 +37,20 @@ void UAIAction_SeekPlayer_C::OnCreate_Blueprint(class ACyberneticController* Con
 }
 
 
+// Function AIAction_SeekPlayer.AIAction_SeekPlayer_C.BeginAction_Blueprint
+// (Event, Protected, BlueprintEvent)
+
+void UAIAction_SeekPlayer_C::BeginAction_Blueprint()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIAction_SeekPlayer_C", "BeginAction_Blueprint");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AIAction_SeekPlayer.AIAction_SeekPlayer_C.ExecuteUbergraph_AIAction_SeekPlayer
 // (Final, UbergraphFunction)
 // Parameters:
@@ -54,20 +68,6 @@ void UAIAction_SeekPlayer_C::ExecuteUbergraph_AIAction_SeekPlayer(int32 EntryPoi
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AIAction_SeekPlayer.AIAction_SeekPlayer_C.BeginAction_Blueprint
-// (Event, Protected, BlueprintEvent)
-
-void UAIAction_SeekPlayer_C::BeginAction_Blueprint()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAction_SeekPlayer_C", "BeginAction_Blueprint");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

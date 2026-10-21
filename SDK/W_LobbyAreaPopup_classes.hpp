@@ -32,14 +32,14 @@ public:
 	bool                                          WaitForMatchStartInformation;                      // 0x0300(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void Construct();
 	void OnGameStarted();
 	void OnFadeOutCompleted();
 	struct FLinearColor GetColorAndOpacity_0();
 	ESlateVisibility Get_RoundCount_Visibility_0();
 	class FText Get_RoundCount_Text_0();
-	class FText DisplayText();
-	void Construct();
 	void ExecuteUbergraph_W_LobbyAreaPopup(int32 EntryPoint);
+	class FText DisplayText();
 
 public:
 	static class UClass* StaticClass()

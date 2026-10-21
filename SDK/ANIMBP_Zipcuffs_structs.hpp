@@ -16,13 +16,6 @@
 namespace SDK
 {
 
-// ScriptStruct ANIMBP_Zipcuffs.ANIMBP_Zipcuffs_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ANIMBP_Zipcuffs::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
-DUMPER7_ASSERTS_ANIMBP_Zipcuffs__FAnimBlueprintGeneratedMutableData;
-
 // ScriptStruct ANIMBP_Zipcuffs.ANIMBP_Zipcuffs_C.AnimBlueprintGeneratedConstantData
 // 0x00CF (0x00D0 - 0x0001)
 struct ANIMBP_Zipcuffs::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData

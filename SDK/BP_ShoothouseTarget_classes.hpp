@@ -33,14 +33,14 @@ public:
 	TMulticastInlineDelegate<void()>              OnTargetHitFailed;                                 // 0x02D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ExecuteUbergraph_BP_ShoothouseTarget(int32 EntryPoint);
-	void DestroyAllDecals();
 	void Reset();
 	void ReceivePointDamage(float Damage, const class UDamageType* DamageType, const struct FVector& HitLocation, const struct FVector& HitNormal, class UPrimitiveComponent* HitComponent, class FName BoneName, const struct FVector& ShotFromDirection, class AController* InstigatedBy, class AActor* DamageCauser, const struct FHitResult& HitInfo);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_ShoothouseTarget(int32 EntryPoint);
+	void DestroyAllDecals();
 
-	void HitAnyFailureBox(const struct FVector& HitLocation, bool* Return_Value) const;
 	void HitAnySuccessBox(const struct FVector& HitLocation, bool* Return_Value) const;
+	void HitAnyFailureBox(const struct FVector& HitLocation, bool* Return_Value) const;
 
 public:
 	static class UClass* StaticClass()

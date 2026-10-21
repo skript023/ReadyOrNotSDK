@@ -17,6 +17,19 @@
 namespace SDK::Params
 {
 
+// Function BP_RotatingTarget.BP_RotatingTarget_C.BndEvt__BP_RotatingTarget_SM_HQ_Target_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature
+// 0x0118 (0x0118 - 0x0000)
+struct BP_RotatingTarget_C_BndEvt__BP_RotatingTarget_SM_HQ_Target_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature final
+{
+public:
+	class UPrimitiveComponent*                    HitComponent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                NormalImpulse;                                     // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hit;                                               // 0x0030(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_RotatingTarget_C_BndEvt__BP_RotatingTarget_SM_HQ_Target_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature;
+
 // Function BP_RotatingTarget.BP_RotatingTarget_C.ExecuteUbergraph_BP_RotatingTarget
 // 0x02B0 (0x02B0 - 0x0000)
 struct BP_RotatingTarget_C_ExecuteUbergraph_BP_RotatingTarget final
@@ -45,19 +58,6 @@ public:
 	float                                         CallFunc_RetriggerableDelay_Duration_ImplicitCast; // 0x02A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_RotatingTarget_C_ExecuteUbergraph_BP_RotatingTarget;
-
-// Function BP_RotatingTarget.BP_RotatingTarget_C.BndEvt__BP_RotatingTarget_SM_HQ_Target_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature
-// 0x0118 (0x0118 - 0x0000)
-struct BP_RotatingTarget_C_BndEvt__BP_RotatingTarget_SM_HQ_Target_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature final
-{
-public:
-	class UPrimitiveComponent*                    HitComponent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                NormalImpulse;                                     // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0030(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-DUMPER7_ASSERTS_BP_RotatingTarget_C_BndEvt__BP_RotatingTarget_SM_HQ_Target_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature;
 
 }
 

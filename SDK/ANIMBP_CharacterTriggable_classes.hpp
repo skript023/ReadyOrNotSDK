@@ -44,10 +44,10 @@ public:
 	struct FFloatSpringState                      LookAtAlphaSpringState;                            // 0x0718(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void BlueprintUpdateAnimation(float DeltaTimeX);
-	void ExecuteUbergraph_ANIMBP_CharacterTriggable(int32 EntryPoint);
 	struct FVector Get_Look_at_Position(float DeltaTime, class APlayerCharacter* Player);
+	void ExecuteUbergraph_ANIMBP_CharacterTriggable(int32 EntryPoint);
+	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()

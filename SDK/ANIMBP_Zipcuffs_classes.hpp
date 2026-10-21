@@ -31,8 +31,8 @@ public:
 	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x0388(0x0048)()
 
 public:
-	void ExecuteUbergraph_ANIMBP_Zipcuffs(int32 EntryPoint);
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void ExecuteUbergraph_ANIMBP_Zipcuffs(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

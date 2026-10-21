@@ -39,12 +39,5 @@ public:
 };
 DUMPER7_ASSERTS_ANIMBP_CharacterTriggable__FAnimBlueprintGeneratedConstantData;
 
-// ScriptStruct ANIMBP_CharacterTriggable.ANIMBP_CharacterTriggable_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ANIMBP_CharacterTriggable::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
-DUMPER7_ASSERTS_ANIMBP_CharacterTriggable__FAnimBlueprintGeneratedMutableData;
-
 }
 

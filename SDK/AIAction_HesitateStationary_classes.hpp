@@ -31,16 +31,16 @@ public:
 	bool                                          bUseOtherVoiceLine;                                // 0x0098(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Tick_Blueprint(float DeltaTime);
-	void PlayHesitationVO();
-	void InitAction_Blueprint(class ACyberneticController* Controller);
-	void GetHesitationVoiceOver(bool bUseAlternate, class FString* NewParam);
 	void ExecuteUbergraph_AIAction_HesitateStationary(int32 EntryPoint);
 	void EndAction_Blueprint();
 	void BeginAction_Blueprint();
+	void GetHesitationVoiceOver(bool bUseAlternate, class FString* NewParam);
+	void InitAction_Blueprint(class ACyberneticController* Controller);
+	void PlayHesitationVO();
+	void Tick_Blueprint(float DeltaTime);
 
-	bool ShouldPerformAction() const;
 	class FName GetMoveStyleOverride() const;
+	bool ShouldPerformAction() const;
 
 public:
 	static class UClass* StaticClass()

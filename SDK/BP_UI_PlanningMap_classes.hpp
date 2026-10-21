@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "ReadyOrNot_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "ReadyOrNot_structs.hpp"
 
 
 namespace SDK
@@ -60,29 +60,29 @@ public:
 	TArray<class UBP_UI_PlanningMap_Marker_C*>    MapMarkerComponents;                               // 0x03D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void UserConstructionScript();
-	void UpdateZoom();
-	void SpawnMapMarker(const struct FVector& Location, class UBP_UI_PlanningMap_Marker_C** OutputPin);
-	void SetMapMaterial(class UMaterialInterface* Material);
-	void RollOutMap();
-	void ReceiveTick(float DeltaSeconds);
-	void ReceiveBeginPlay();
-	void PanCamera(bool Panning_0, const struct FVector2D& CursorPos);
-	void OnLoaded_6AC405FF4BFE790347C0B19681EDEBD5(class UObject* Loaded);
-	void InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_1(const struct FKey& Key);
-	void InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_0(const struct FKey& Key);
-	void InitializeFloor();
-	void GetMapMaterial(bool ForceUpdate, class UMaterialInstanceDynamic** MapDynMat_0);
-	void GetCurrentMapMaterial(class UMaterialInterface** CurrentMaterial);
-	void Fill_Level_Data_from_Table();
-	void ExecuteUbergraph_BP_UI_PlanningMap(int32 EntryPoint);
-	void DeactivateCamera();
-	void ChangeFloors(int32 Floor);
-	void AnimateShow();
-	void AnimateHide(bool Silent);
-	void AdditivePan();
-	void ActivateMapCamera();
 	void AbsolutePan(const struct FVector2D& Delta);
+	void ActivateMapCamera();
+	void AdditivePan();
+	void AnimateHide(bool Silent);
+	void AnimateShow();
+	void ChangeFloors(int32 Floor);
+	void DeactivateCamera();
+	void ExecuteUbergraph_BP_UI_PlanningMap(int32 EntryPoint);
+	void Fill_Level_Data_from_Table();
+	void GetCurrentMapMaterial(class UMaterialInterface** CurrentMaterial);
+	void GetMapMaterial(bool ForceUpdate, class UMaterialInstanceDynamic** MapDynMat_0);
+	void InitializeFloor();
+	void InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_0(const struct FKey& Key);
+	void InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_1(const struct FKey& Key);
+	void OnLoaded_6AC405FF4BFE790347C0B19681EDEBD5(class UObject* Loaded);
+	void PanCamera(bool Panning_0, const struct FVector2D& CursorPos);
+	void ReceiveBeginPlay();
+	void ReceiveTick(float DeltaSeconds);
+	void RollOutMap();
+	void SetMapMaterial(class UMaterialInterface* Material);
+	void SpawnMapMarker(const struct FVector& Location, class UBP_UI_PlanningMap_Marker_C** OutputPin);
+	void UpdateZoom();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

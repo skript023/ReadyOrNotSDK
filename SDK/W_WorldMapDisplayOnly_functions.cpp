@@ -17,62 +17,49 @@
 namespace SDK
 {
 
-// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.Tick
+// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UW_WorldMapDisplayOnly_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UW_WorldMapDisplayOnly_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_WorldMapDisplayOnly_C", "Tick");
+		Func = Class->GetFunction("W_WorldMapDisplayOnly_C", "Construct");
 
-	Params::W_WorldMapDisplayOnly_C_Tick Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+
+// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.ExecuteUbergraph_W_WorldMapDisplayOnly
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UW_WorldMapDisplayOnly_C::ExecuteUbergraph_W_WorldMapDisplayOnly(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_WorldMapDisplayOnly_C", "ExecuteUbergraph_W_WorldMapDisplayOnly");
+
+	Params::W_WorldMapDisplayOnly_C_ExecuteUbergraph_W_WorldMapDisplayOnly Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.OnMouseMove
-// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-struct FEventReply UW_WorldMapDisplayOnly_C::OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_WorldMapDisplayOnly_C", "OnMouseMove");
-
-	Params::W_WorldMapDisplayOnly_C_OnMouseMove Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.MouseEvent = std::move(MouseEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.OnMissionSelected
+// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.OnDifficultyUpdated
 // (BlueprintCallable, BlueprintEvent)
 
-void UW_WorldMapDisplayOnly_C::OnMissionSelected()
+void UW_WorldMapDisplayOnly_C::OnDifficultyUpdated()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_WorldMapDisplayOnly_C", "OnMissionSelected");
+		Func = Class->GetFunction("W_WorldMapDisplayOnly_C", "OnDifficultyUpdated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -104,51 +91,64 @@ void UW_WorldMapDisplayOnly_C::OnDragDetected(const struct FGeometry& MyGeometry
 }
 
 
-// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.OnDifficultyUpdated
+// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.OnMissionSelected
 // (BlueprintCallable, BlueprintEvent)
 
-void UW_WorldMapDisplayOnly_C::OnDifficultyUpdated()
+void UW_WorldMapDisplayOnly_C::OnMissionSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_WorldMapDisplayOnly_C", "OnDifficultyUpdated");
+		Func = Class->GetFunction("W_WorldMapDisplayOnly_C", "OnMissionSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.ExecuteUbergraph_W_WorldMapDisplayOnly
-// (Final, UbergraphFunction, HasDefaults)
+// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.OnMouseMove
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-void UW_WorldMapDisplayOnly_C::ExecuteUbergraph_W_WorldMapDisplayOnly(int32 EntryPoint)
+struct FEventReply UW_WorldMapDisplayOnly_C::OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_WorldMapDisplayOnly_C", "ExecuteUbergraph_W_WorldMapDisplayOnly");
+		Func = Class->GetFunction("W_WorldMapDisplayOnly_C", "OnMouseMove");
 
-	Params::W_WorldMapDisplayOnly_C_ExecuteUbergraph_W_WorldMapDisplayOnly Parms{};
+	Params::W_WorldMapDisplayOnly_C_OnMouseMove Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.MouseEvent = std::move(MouseEvent);
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.Construct
+// Function W_WorldMapDisplayOnly.W_WorldMapDisplayOnly_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UW_WorldMapDisplayOnly_C::Construct()
+void UW_WorldMapDisplayOnly_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_WorldMapDisplayOnly_C", "Construct");
+		Func = Class->GetFunction("W_WorldMapDisplayOnly_C", "Tick");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::W_WorldMapDisplayOnly_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -17,6 +17,29 @@
 namespace SDK
 {
 
+// Function AG_CanSeeLastSeenEnemyPosition.AG_CanSeeLastSeenEnemyPosition_C.CanOpen
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// const struct FAIActionDecisionContext&  Context                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UAG_CanSeeLastSeenEnemyPosition_C::CanOpen(const struct FAIActionDecisionContext& Context) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AG_CanSeeLastSeenEnemyPosition_C", "CanOpen");
+
+	Params::AG_CanSeeLastSeenEnemyPosition_C_CanOpen Parms{};
+
+	Parms.Context = std::move(Context);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function AG_CanSeeLastSeenEnemyPosition.AG_CanSeeLastSeenEnemyPosition_C.GetTargetPos
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -38,29 +61,6 @@ void UAG_CanSeeLastSeenEnemyPosition_C::GetTargetPos(class ACyberneticController
 
 	if (TargetPosition != nullptr)
 		*TargetPosition = std::move(Parms.TargetPosition);
-}
-
-
-// Function AG_CanSeeLastSeenEnemyPosition.AG_CanSeeLastSeenEnemyPosition_C.CanOpen
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// const struct FAIActionDecisionContext&  Context                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool UAG_CanSeeLastSeenEnemyPosition_C::CanOpen(const struct FAIActionDecisionContext& Context) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AG_CanSeeLastSeenEnemyPosition_C", "CanOpen");
-
-	Params::AG_CanSeeLastSeenEnemyPosition_C_CanOpen Parms{};
-
-	Parms.Context = std::move(Context);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 }

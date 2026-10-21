@@ -17,219 +17,174 @@
 namespace SDK
 {
 
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.AbsolutePan
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FVector2D&                 Delta                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_UI_PlanningMap_C::UserConstructionScript()
+void ABP_UI_PlanningMap_C::AbsolutePan(const struct FVector2D& Delta)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "UserConstructionScript");
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "AbsolutePan");
+
+	Params::BP_UI_PlanningMap_C_AbsolutePan Parms{};
+
+	Parms.Delta = std::move(Delta);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.ActivateMapCamera
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_UI_PlanningMap_C::ActivateMapCamera()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "ActivateMapCamera");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.UpdateZoom
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.AdditivePan
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_UI_PlanningMap_C::UpdateZoom()
+void ABP_UI_PlanningMap_C::AdditivePan()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "UpdateZoom");
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "AdditivePan");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.SpawnMapMarker
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.AnimateHide
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UBP_UI_PlanningMap_Marker_C**     OutputPin                                              (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    Silent                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_UI_PlanningMap_C::SpawnMapMarker(const struct FVector& Location, class UBP_UI_PlanningMap_Marker_C** OutputPin)
+void ABP_UI_PlanningMap_C::AnimateHide(bool Silent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "SpawnMapMarker");
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "AnimateHide");
 
-	Params::BP_UI_PlanningMap_C_SpawnMapMarker Parms{};
+	Params::BP_UI_PlanningMap_C_AnimateHide Parms{};
 
-	Parms.Location = std::move(Location);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutputPin != nullptr)
-		*OutputPin = Parms.OutputPin;
-}
-
-
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.SetMapMaterial
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UMaterialInterface*               Material                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_UI_PlanningMap_C::SetMapMaterial(class UMaterialInterface* Material)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "SetMapMaterial");
-
-	Params::BP_UI_PlanningMap_C_SetMapMaterial Parms{};
-
-	Parms.Material = Material;
+	Parms.Silent = Silent;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.RollOutMap
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.AnimateShow
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_UI_PlanningMap_C::RollOutMap()
+void ABP_UI_PlanningMap_C::AnimateShow()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "RollOutMap");
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "AnimateShow");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.ChangeFloors
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Floor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_UI_PlanningMap_C::ReceiveTick(float DeltaSeconds)
+void ABP_UI_PlanningMap_C::ChangeFloors(int32 Floor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "ReceiveTick");
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "ChangeFloors");
 
-	Params::BP_UI_PlanningMap_C_ReceiveTick Parms{};
+	Params::BP_UI_PlanningMap_C_ChangeFloors Parms{};
 
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.Floor = Floor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.DeactivateCamera
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_UI_PlanningMap_C::ReceiveBeginPlay()
+void ABP_UI_PlanningMap_C::DeactivateCamera()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "DeactivateCamera");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.PanCamera
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.ExecuteUbergraph_BP_UI_PlanningMap
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    Panning_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FVector2D&                 CursorPos                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_UI_PlanningMap_C::PanCamera(bool Panning_0, const struct FVector2D& CursorPos)
+void ABP_UI_PlanningMap_C::ExecuteUbergraph_BP_UI_PlanningMap(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "PanCamera");
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "ExecuteUbergraph_BP_UI_PlanningMap");
 
-	Params::BP_UI_PlanningMap_C_PanCamera Parms{};
+	Params::BP_UI_PlanningMap_C_ExecuteUbergraph_BP_UI_PlanningMap Parms{};
 
-	Parms.Panning_0 = Panning_0;
-	Parms.CursorPos = std::move(CursorPos);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.OnLoaded_6AC405FF4BFE790347C0B19681EDEBD5
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.Fill Level Data from Table
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_UI_PlanningMap_C::OnLoaded_6AC405FF4BFE790347C0B19681EDEBD5(class UObject* Loaded)
+void ABP_UI_PlanningMap_C::Fill_Level_Data_from_Table()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "OnLoaded_6AC405FF4BFE790347C0B19681EDEBD5");
-
-	Params::BP_UI_PlanningMap_C_OnLoaded_6AC405FF4BFE790347C0B19681EDEBD5 Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_1
-// (BlueprintEvent)
-// Parameters:
-// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void ABP_UI_PlanningMap_C::InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_1(const struct FKey& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_1");
-
-	Params::BP_UI_PlanningMap_C_InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_1 Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_0
-// (BlueprintEvent)
-// Parameters:
-// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void ABP_UI_PlanningMap_C::InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_0(const struct FKey& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_0");
-
-	Params::BP_UI_PlanningMap_C_InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_0 Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.InitializeFloor
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_UI_PlanningMap_C::InitializeFloor()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "InitializeFloor");
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "Fill Level Data from Table");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.GetCurrentMapMaterial
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UMaterialInterface**              CurrentMaterial                                        (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_UI_PlanningMap_C::GetCurrentMapMaterial(class UMaterialInterface** CurrentMaterial)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "GetCurrentMapMaterial");
+
+	Params::BP_UI_PlanningMap_C_GetCurrentMapMaterial Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CurrentMaterial != nullptr)
+		*CurrentMaterial = Parms.CurrentMaterial;
 }
 
 
@@ -257,174 +212,219 @@ void ABP_UI_PlanningMap_C::GetMapMaterial(bool ForceUpdate, class UMaterialInsta
 }
 
 
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.GetCurrentMapMaterial
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UMaterialInterface**              CurrentMaterial                                        (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.InitializeFloor
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_UI_PlanningMap_C::GetCurrentMapMaterial(class UMaterialInterface** CurrentMaterial)
+void ABP_UI_PlanningMap_C::InitializeFloor()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "GetCurrentMapMaterial");
-
-	Params::BP_UI_PlanningMap_C_GetCurrentMapMaterial Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (CurrentMaterial != nullptr)
-		*CurrentMaterial = Parms.CurrentMaterial;
-}
-
-
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.Fill Level Data from Table
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_UI_PlanningMap_C::Fill_Level_Data_from_Table()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "Fill Level Data from Table");
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "InitializeFloor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.ExecuteUbergraph_BP_UI_PlanningMap
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_0
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void ABP_UI_PlanningMap_C::ExecuteUbergraph_BP_UI_PlanningMap(int32 EntryPoint)
+void ABP_UI_PlanningMap_C::InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_0(const struct FKey& Key)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "ExecuteUbergraph_BP_UI_PlanningMap");
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_0");
 
-	Params::BP_UI_PlanningMap_C_ExecuteUbergraph_BP_UI_PlanningMap Parms{};
+	Params::BP_UI_PlanningMap_C_InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_0 Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Key = std::move(Key);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.DeactivateCamera
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_1
+// (BlueprintEvent)
+// Parameters:
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void ABP_UI_PlanningMap_C::DeactivateCamera()
+void ABP_UI_PlanningMap_C::InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_1(const struct FKey& Key)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "DeactivateCamera");
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_1");
+
+	Params::BP_UI_PlanningMap_C_InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_1 Parms{};
+
+	Parms.Key = std::move(Key);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.OnLoaded_6AC405FF4BFE790347C0B19681EDEBD5
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_UI_PlanningMap_C::OnLoaded_6AC405FF4BFE790347C0B19681EDEBD5(class UObject* Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "OnLoaded_6AC405FF4BFE790347C0B19681EDEBD5");
+
+	Params::BP_UI_PlanningMap_C_OnLoaded_6AC405FF4BFE790347C0B19681EDEBD5 Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.PanCamera
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Panning_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector2D&                 CursorPos                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_UI_PlanningMap_C::PanCamera(bool Panning_0, const struct FVector2D& CursorPos)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "PanCamera");
+
+	Params::BP_UI_PlanningMap_C_PanCamera Parms{};
+
+	Parms.Panning_0 = Panning_0;
+	Parms.CursorPos = std::move(CursorPos);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_UI_PlanningMap_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.ChangeFloors
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   Floor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_UI_PlanningMap_C::ChangeFloors(int32 Floor)
+void ABP_UI_PlanningMap_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "ChangeFloors");
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "ReceiveTick");
 
-	Params::BP_UI_PlanningMap_C_ChangeFloors Parms{};
+	Params::BP_UI_PlanningMap_C_ReceiveTick Parms{};
 
-	Parms.Floor = Floor;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.AnimateShow
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.RollOutMap
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_UI_PlanningMap_C::AnimateShow()
+void ABP_UI_PlanningMap_C::RollOutMap()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "AnimateShow");
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "RollOutMap");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.AnimateHide
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.SetMapMaterial
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Silent                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInterface*               Material                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_UI_PlanningMap_C::AnimateHide(bool Silent)
+void ABP_UI_PlanningMap_C::SetMapMaterial(class UMaterialInterface* Material)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "AnimateHide");
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "SetMapMaterial");
 
-	Params::BP_UI_PlanningMap_C_AnimateHide Parms{};
+	Params::BP_UI_PlanningMap_C_SetMapMaterial Parms{};
 
-	Parms.Silent = Silent;
+	Parms.Material = Material;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.AdditivePan
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.SpawnMapMarker
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UBP_UI_PlanningMap_Marker_C**     OutputPin                                              (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_UI_PlanningMap_C::SpawnMapMarker(const struct FVector& Location, class UBP_UI_PlanningMap_Marker_C** OutputPin)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "SpawnMapMarker");
+
+	Params::BP_UI_PlanningMap_C_SpawnMapMarker Parms{};
+
+	Parms.Location = std::move(Location);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutputPin != nullptr)
+		*OutputPin = Parms.OutputPin;
+}
+
+
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.UpdateZoom
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_UI_PlanningMap_C::AdditivePan()
+void ABP_UI_PlanningMap_C::UpdateZoom()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "AdditivePan");
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "UpdateZoom");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.ActivateMapCamera
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_UI_PlanningMap_C::ActivateMapCamera()
+void ABP_UI_PlanningMap_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "ActivateMapCamera");
+		Func = Class->GetFunction("BP_UI_PlanningMap_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_UI_PlanningMap.BP_UI_PlanningMap_C.AbsolutePan
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FVector2D&                 Delta                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_UI_PlanningMap_C::AbsolutePan(const struct FVector2D& Delta)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_PlanningMap_C", "AbsolutePan");
-
-	Params::BP_UI_PlanningMap_C_AbsolutePan Parms{};
-
-	Parms.Delta = std::move(Delta);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

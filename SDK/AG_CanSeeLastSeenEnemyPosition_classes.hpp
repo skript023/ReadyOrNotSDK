@@ -24,8 +24,8 @@ public:
 	bool                                          CheckLast_Known;                                   // 0x0028(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void GetTargetPos(class ACyberneticController* Controller, struct FVector* TargetPosition) const;
 	bool CanOpen(const struct FAIActionDecisionContext& Context) const;
+	void GetTargetPos(class ACyberneticController* Controller, struct FVector* TargetPosition) const;
 
 public:
 	static class UClass* StaticClass()

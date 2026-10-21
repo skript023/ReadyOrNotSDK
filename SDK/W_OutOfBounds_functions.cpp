@@ -17,63 +17,63 @@
 namespace SDK
 {
 
-// Function W_OutOfBounds.W_OutOfBounds_C.UpdateTimeRemaining
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function W_OutOfBounds.W_OutOfBounds_C.ExecuteUbergraph_W_OutOfBounds
+// (Final, UbergraphFunction)
 // Parameters:
-// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UW_OutOfBounds_C::UpdateTimeRemaining(double Value)
+void UW_OutOfBounds_C::ExecuteUbergraph_W_OutOfBounds(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_OutOfBounds_C", "UpdateTimeRemaining");
+		Func = Class->GetFunction("W_OutOfBounds_C", "ExecuteUbergraph_W_OutOfBounds");
 
-	Params::W_OutOfBounds_C_UpdateTimeRemaining Parms{};
+	Params::W_OutOfBounds_C_ExecuteUbergraph_W_OutOfBounds Parms{};
 
-	Parms.Value = Value;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function W_OutOfBounds.W_OutOfBounds_C.ShowWarningInfo
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function W_OutOfBounds.W_OutOfBounds_C.FadeIn_StartCountdown
+// (BlueprintCallable, BlueprintEvent)
 
-void UW_OutOfBounds_C::ShowWarningInfo()
+void UW_OutOfBounds_C::FadeIn_StartCountdown()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_OutOfBounds_C", "ShowWarningInfo");
+		Func = Class->GetFunction("W_OutOfBounds_C", "FadeIn_StartCountdown");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function W_OutOfBounds.W_OutOfBounds_C.SequenceEvent__ENTRYPOINTW_OutOfBounds_0
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function W_OutOfBounds.W_OutOfBounds_C.FadeOut_StopCountdown
+// (BlueprintCallable, BlueprintEvent)
 
-void UW_OutOfBounds_C::SequenceEvent__ENTRYPOINTW_OutOfBounds_0()
+void UW_OutOfBounds_C::FadeOut_StopCountdown()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_OutOfBounds_C", "SequenceEvent__ENTRYPOINTW_OutOfBounds_0");
+		Func = Class->GetFunction("W_OutOfBounds_C", "FadeOut_StopCountdown");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function W_OutOfBounds.W_OutOfBounds_C.SequenceEvent__ENTRYPOINTW_OutOfBounds
+// Function W_OutOfBounds.W_OutOfBounds_C.HideWarningInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UW_OutOfBounds_C::SequenceEvent__ENTRYPOINTW_OutOfBounds()
+void UW_OutOfBounds_C::HideWarningInfo()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_OutOfBounds_C", "SequenceEvent__ENTRYPOINTW_OutOfBounds");
+		Func = Class->GetFunction("W_OutOfBounds_C", "HideWarningInfo");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,63 +99,63 @@ void UW_OutOfBounds_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function W_OutOfBounds.W_OutOfBounds_C.HideWarningInfo
+// Function W_OutOfBounds.W_OutOfBounds_C.SequenceEvent__ENTRYPOINTW_OutOfBounds
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UW_OutOfBounds_C::HideWarningInfo()
+void UW_OutOfBounds_C::SequenceEvent__ENTRYPOINTW_OutOfBounds()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_OutOfBounds_C", "HideWarningInfo");
+		Func = Class->GetFunction("W_OutOfBounds_C", "SequenceEvent__ENTRYPOINTW_OutOfBounds");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function W_OutOfBounds.W_OutOfBounds_C.FadeOut_StopCountdown
-// (BlueprintCallable, BlueprintEvent)
+// Function W_OutOfBounds.W_OutOfBounds_C.SequenceEvent__ENTRYPOINTW_OutOfBounds_0
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UW_OutOfBounds_C::FadeOut_StopCountdown()
+void UW_OutOfBounds_C::SequenceEvent__ENTRYPOINTW_OutOfBounds_0()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_OutOfBounds_C", "FadeOut_StopCountdown");
+		Func = Class->GetFunction("W_OutOfBounds_C", "SequenceEvent__ENTRYPOINTW_OutOfBounds_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function W_OutOfBounds.W_OutOfBounds_C.FadeIn_StartCountdown
-// (BlueprintCallable, BlueprintEvent)
+// Function W_OutOfBounds.W_OutOfBounds_C.ShowWarningInfo
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UW_OutOfBounds_C::FadeIn_StartCountdown()
+void UW_OutOfBounds_C::ShowWarningInfo()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_OutOfBounds_C", "FadeIn_StartCountdown");
+		Func = Class->GetFunction("W_OutOfBounds_C", "ShowWarningInfo");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function W_OutOfBounds.W_OutOfBounds_C.ExecuteUbergraph_W_OutOfBounds
-// (Final, UbergraphFunction)
+// Function W_OutOfBounds.W_OutOfBounds_C.UpdateTimeRemaining
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UW_OutOfBounds_C::ExecuteUbergraph_W_OutOfBounds(int32 EntryPoint)
+void UW_OutOfBounds_C::UpdateTimeRemaining(double Value)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_OutOfBounds_C", "ExecuteUbergraph_W_OutOfBounds");
+		Func = Class->GetFunction("W_OutOfBounds_C", "UpdateTimeRemaining");
 
-	Params::W_OutOfBounds_C_ExecuteUbergraph_W_OutOfBounds Parms{};
+	Params::W_OutOfBounds_C_UpdateTimeRemaining Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Value = Value;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

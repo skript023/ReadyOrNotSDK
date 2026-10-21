@@ -9,44 +9,64 @@
 // FORWARD DECLARATIONS
 
 
+namespace BP_ShootingRange_0 { class ABP_ShootingRange_C; }
+
 namespace LoadoutCategory { struct FLoadoutCategory; }
 
-namespace ANIMBP_Zipcuffs_Placed { struct FAnimBlueprintGeneratedConstantData; }
+namespace ANIMBP_Chemlight { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace ANIMBP_Zipcuffs_Placed_FP { struct FAnimBlueprintGeneratedConstantData; }
+namespace ANIMBP_C2_Clacker { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace BP_ShootingRange_0 { class ABP_ShootingRange_C; }
+namespace APB_ScarH_Tripod_Sight_Down { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace ANIMBP_Zipcuffs { struct FAnimBlueprintGeneratedConstantData; }
 
 namespace BP_ShootingRange { class ABP_ShootingRange_C; }
 
+namespace ANIMBP_Zipcuffs_Placed { struct FAnimBlueprintGeneratedConstantData; }
+
 namespace ReadyOrNot { struct FLoadoutCategory; }
 
+namespace ANIMBP_Zipcuffs_Placed_FP { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace ANIMBP_CharacterTriggable
+namespace ANIMBP_LockPick_Gun { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace ANIMBP_NVG { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace ABP_Target_Gong { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace ANIMBP_CharacterTriggable { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace ANIMBP_Ninebang { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace ANIMBP_TacPhone { struct FAnimBlueprintGeneratedConstantData; }
+
+
+namespace ANIMBP_Preview_Char_Head
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ANIMBP_Head_Shared_Master
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ANIMBP_M320
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ANIMBP_G36C_V2
 {
 	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;
 }
 
-namespace ANIMBP_Multitool
-{
-	struct FAnimBlueprintGeneratedConstantData;
-	struct FAnimBlueprintGeneratedMutableData;
-}
-
-namespace ANIMBP_Preview_Char_Body
-{
-	struct FAnimBlueprintGeneratedConstantData;
-	struct FAnimBlueprintGeneratedMutableData;
-}
-
-namespace ANIMBP_Player_TP_V3
-{
-	struct FAnimBlueprintGeneratedConstantData;
-	struct FAnimBlueprintGeneratedMutableData;
-}
-
-namespace ANIMBP_Player_FP_Master
+namespace ANIMBP_Head_Smudge
 {
 	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;
@@ -64,43 +84,25 @@ namespace ANIMBP_Player_TP_V4
 	struct FAnimBlueprintGeneratedMutableData;
 }
 
-namespace ANIMBP_Chemlight
+namespace ANIMBP_TelescopicLadder
 {
 	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;
-}
-
-namespace ANIMBP_Taser7
-{
-	struct FAnimBlueprintGeneratedConstantData;
-	struct FAnimBlueprintGeneratedMutableData;
-}
-
-namespace ANIMBP_Flashbang_V2
-{
-	struct FAnimBlueprintGeneratedMutableData;
-	struct FAnimBlueprintGeneratedConstantData;
-}
-
-namespace ABP_WP_MK17
-{
-	struct FAnimBlueprintGeneratedMutableData;
-	struct FAnimBlueprintGeneratedConstantData;
 }
 
 namespace ANIMBP_G19G5
 {
-	struct FAnimBlueprintGeneratedMutableData;
 	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
 }
 
-namespace ANIMBP_M320
+namespace ANIMBP_Player_FP_Master
 {
 	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;
 }
 
-namespace ANIMBP_Head_Shared_Master
+namespace ANIMBP_Player_TP_V3
 {
 	struct FAnimBlueprintGeneratedMutableData;
 	struct FAnimBlueprintGeneratedConstantData;
@@ -108,59 +110,23 @@ namespace ANIMBP_Head_Shared_Master
 
 namespace ANIMBP_CharacterTriggable_Head
 {
-	struct FAnimBlueprintGeneratedMutableData;
 	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
 }
 
-namespace ABP_Target_Gong
+namespace ANIMBP_Preview_Char_Body
 {
 	struct FAnimBlueprintGeneratedMutableData;
 	struct FAnimBlueprintGeneratedConstantData;
-}
-
-namespace ANIMBP_C2_Clacker
-{
-	struct FAnimBlueprintGeneratedConstantData;
-	struct FAnimBlueprintGeneratedMutableData;
 }
 
 namespace ANIMBP_AI_MoveStyle_Base_V2
 {
-	struct FAnimBlueprintGeneratedMutableData;
-	struct FAnimBlueprintGeneratedConstantData;
-}
-
-namespace ANIMBP_Head_Smudge
-{
-	struct FAnimBlueprintGeneratedMutableData;
-	struct FAnimBlueprintGeneratedConstantData;
-}
-
-namespace ANIMBP_TacPhone
-{
-	struct FAnimBlueprintGeneratedMutableData;
-	struct FAnimBlueprintGeneratedConstantData;
-}
-
-namespace ANIMBP_NVG
-{
 	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;
 }
 
-namespace ANIMBP_Zipcuffs
-{
-	struct FAnimBlueprintGeneratedMutableData;
-	struct FAnimBlueprintGeneratedConstantData;
-}
-
-namespace ANIMBP_G36C_V2
-{
-	struct FAnimBlueprintGeneratedMutableData;
-	struct FAnimBlueprintGeneratedConstantData;
-}
-
-namespace ANIMBP_Preview_Char_Head
+namespace ANIMBP_Multitool
 {
 	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;

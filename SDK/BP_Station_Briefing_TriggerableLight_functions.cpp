@@ -17,15 +17,29 @@
 namespace SDK
 {
 
-// Function BP_Station_Briefing_TriggerableLight.BP_Station_Briefing_TriggerableLight_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_Station_Briefing_TriggerableLight.BP_Station_Briefing_TriggerableLight_C.Activate
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Station_Briefing_TriggerableLight_C::ReceiveBeginPlay()
+void ABP_Station_Briefing_TriggerableLight_C::Activate()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Station_Briefing_TriggerableLight_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_Station_Briefing_TriggerableLight_C", "Activate");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Station_Briefing_TriggerableLight.BP_Station_Briefing_TriggerableLight_C.Deactivate
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Station_Briefing_TriggerableLight_C::Deactivate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Station_Briefing_TriggerableLight_C", "Deactivate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,29 +65,15 @@ void ABP_Station_Briefing_TriggerableLight_C::ExecuteUbergraph_BP_Station_Briefi
 }
 
 
-// Function BP_Station_Briefing_TriggerableLight.BP_Station_Briefing_TriggerableLight_C.Deactivate
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Station_Briefing_TriggerableLight.BP_Station_Briefing_TriggerableLight_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_Station_Briefing_TriggerableLight_C::Deactivate()
+void ABP_Station_Briefing_TriggerableLight_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Station_Briefing_TriggerableLight_C", "Deactivate");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Station_Briefing_TriggerableLight.BP_Station_Briefing_TriggerableLight_C.Activate
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Station_Briefing_TriggerableLight_C::Activate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Station_Briefing_TriggerableLight_C", "Activate");
+		Func = Class->GetFunction("BP_Station_Briefing_TriggerableLight_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

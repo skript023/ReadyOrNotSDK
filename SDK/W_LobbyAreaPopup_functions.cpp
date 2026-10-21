@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function W_LobbyAreaPopup.W_LobbyAreaPopup_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UW_LobbyAreaPopup_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_LobbyAreaPopup_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function W_LobbyAreaPopup.W_LobbyAreaPopup_C.OnGameStarted
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -105,40 +119,6 @@ class FText UW_LobbyAreaPopup_C::Get_RoundCount_Text_0()
 }
 
 
-// Function W_LobbyAreaPopup.W_LobbyAreaPopup_C.DisplayText
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-class FText UW_LobbyAreaPopup_C::DisplayText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_LobbyAreaPopup_C", "DisplayText");
-
-	Params::W_LobbyAreaPopup_C_DisplayText Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function W_LobbyAreaPopup.W_LobbyAreaPopup_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UW_LobbyAreaPopup_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_LobbyAreaPopup_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function W_LobbyAreaPopup.W_LobbyAreaPopup_C.ExecuteUbergraph_W_LobbyAreaPopup
 // (Final, UbergraphFunction)
 // Parameters:
@@ -156,6 +136,26 @@ void UW_LobbyAreaPopup_C::ExecuteUbergraph_W_LobbyAreaPopup(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function W_LobbyAreaPopup.W_LobbyAreaPopup_C.DisplayText
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+class FText UW_LobbyAreaPopup_C::DisplayText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_LobbyAreaPopup_C", "DisplayText");
+
+	Params::W_LobbyAreaPopup_C_DisplayText Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

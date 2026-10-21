@@ -451,20 +451,6 @@ void ABP_CoffeeVendingMachine_C::CustomEvent_1()
 }
 
 
-// Function BP_CoffeeVendingMachine.BP_CoffeeVendingMachine_C.CustomEvent_0
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_CoffeeVendingMachine_C::CustomEvent_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CoffeeVendingMachine_C", "CustomEvent_0");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_CoffeeVendingMachine.BP_CoffeeVendingMachine_C.IsMachineInteraction
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:

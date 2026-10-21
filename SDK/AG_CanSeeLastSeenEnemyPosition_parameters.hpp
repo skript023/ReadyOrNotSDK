@@ -17,6 +17,20 @@
 namespace SDK::Params
 {
 
+// Function AG_CanSeeLastSeenEnemyPosition.AG_CanSeeLastSeenEnemyPosition_C.CanOpen
+// 0x0040 (0x0040 - 0x0000)
+struct AG_CanSeeLastSeenEnemyPosition_C_CanOpen final
+{
+public:
+	struct FAIActionDecisionContext               Context;                                           // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ACyberneticCharacter*                   CallFunc_GetCharacter_ReturnValue;                 // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetTargetPos_TargetPosition;              // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasLineOfSightTo_ReturnValue;             // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_AG_CanSeeLastSeenEnemyPosition_C_CanOpen;
+
 // Function AG_CanSeeLastSeenEnemyPosition.AG_CanSeeLastSeenEnemyPosition_C.GetTargetPos
 // 0x0110 (0x0110 - 0x0000)
 struct AG_CanSeeLastSeenEnemyPosition_C_GetTargetPos final
@@ -66,20 +80,6 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_AG_CanSeeLastSeenEnemyPosition_C_GetTargetPos;
-
-// Function AG_CanSeeLastSeenEnemyPosition.AG_CanSeeLastSeenEnemyPosition_C.CanOpen
-// 0x0040 (0x0040 - 0x0000)
-struct AG_CanSeeLastSeenEnemyPosition_C_CanOpen final
-{
-public:
-	struct FAIActionDecisionContext               Context;                                           // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ACyberneticCharacter*                   CallFunc_GetCharacter_ReturnValue;                 // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetTargetPos_TargetPosition;              // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasLineOfSightTo_ReturnValue;             // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_AG_CanSeeLastSeenEnemyPosition_C_CanOpen;
 
 }
 

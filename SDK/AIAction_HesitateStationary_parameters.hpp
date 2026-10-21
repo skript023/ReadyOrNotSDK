@@ -18,36 +18,6 @@
 namespace SDK::Params
 {
 
-// Function AIAction_HesitateStationary.AIAction_HesitateStationary_C.Tick_Blueprint
-// 0x0004 (0x0004 - 0x0000)
-struct AIAction_HesitateStationary_C_Tick_Blueprint final
-{
-public:
-	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_AIAction_HesitateStationary_C_Tick_Blueprint;
-
-// Function AIAction_HesitateStationary.AIAction_HesitateStationary_C.InitAction_Blueprint
-// 0x0008 (0x0008 - 0x0000)
-struct AIAction_HesitateStationary_C_InitAction_Blueprint final
-{
-public:
-	class ACyberneticController*                  Controller;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_AIAction_HesitateStationary_C_InitAction_Blueprint;
-
-// Function AIAction_HesitateStationary.AIAction_HesitateStationary_C.GetHesitationVoiceOver
-// 0x0028 (0x0028 - 0x0000)
-struct AIAction_HesitateStationary_C_GetHesitationVoiceOver final
-{
-public:
-	bool                                          bUseAlternate;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 NewParam;                                          // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_AIAction_HesitateStationary_C_GetHesitationVoiceOver;
-
 // Function AIAction_HesitateStationary.AIAction_HesitateStationary_C.ExecuteUbergraph_AIAction_HesitateStationary
 // 0x0148 (0x0148 - 0x0000)
 struct AIAction_HesitateStationary_C_ExecuteUbergraph_AIAction_HesitateStationary final
@@ -105,14 +75,35 @@ public:
 };
 DUMPER7_ASSERTS_AIAction_HesitateStationary_C_ExecuteUbergraph_AIAction_HesitateStationary;
 
-// Function AIAction_HesitateStationary.AIAction_HesitateStationary_C.ShouldPerformAction
-// 0x0001 (0x0001 - 0x0000)
-struct AIAction_HesitateStationary_C_ShouldPerformAction final
+// Function AIAction_HesitateStationary.AIAction_HesitateStationary_C.GetHesitationVoiceOver
+// 0x0028 (0x0028 - 0x0000)
+struct AIAction_HesitateStationary_C_GetHesitationVoiceOver final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bUseAlternate;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 NewParam;                                          // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_AIAction_HesitateStationary_C_ShouldPerformAction;
+DUMPER7_ASSERTS_AIAction_HesitateStationary_C_GetHesitationVoiceOver;
+
+// Function AIAction_HesitateStationary.AIAction_HesitateStationary_C.InitAction_Blueprint
+// 0x0008 (0x0008 - 0x0000)
+struct AIAction_HesitateStationary_C_InitAction_Blueprint final
+{
+public:
+	class ACyberneticController*                  Controller;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_AIAction_HesitateStationary_C_InitAction_Blueprint;
+
+// Function AIAction_HesitateStationary.AIAction_HesitateStationary_C.Tick_Blueprint
+// 0x0004 (0x0004 - 0x0000)
+struct AIAction_HesitateStationary_C_Tick_Blueprint final
+{
+public:
+	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_AIAction_HesitateStationary_C_Tick_Blueprint;
 
 // Function AIAction_HesitateStationary.AIAction_HesitateStationary_C.GetMoveStyleOverride
 // 0x0020 (0x0020 - 0x0000)
@@ -126,6 +117,15 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_AIAction_HesitateStationary_C_GetMoveStyleOverride;
+
+// Function AIAction_HesitateStationary.AIAction_HesitateStationary_C.ShouldPerformAction
+// 0x0001 (0x0001 - 0x0000)
+struct AIAction_HesitateStationary_C_ShouldPerformAction final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_AIAction_HesitateStationary_C_ShouldPerformAction;
 
 }
 

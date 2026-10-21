@@ -31,10 +31,10 @@ public:
 	bool                                          IsActivatedOnStart_;                               // 0x02E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_BP_Station_Briefing_TriggerableLight(int32 EntryPoint);
-	void Deactivate();
 	void Activate();
+	void Deactivate();
+	void ExecuteUbergraph_BP_Station_Briefing_TriggerableLight(int32 EntryPoint);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

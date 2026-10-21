@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "ParameterTransitionStruct_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "ParameterTransitionStruct_structs.hpp"
 #include "ParameterTransition_Reverb_Enum_structs.hpp"
 #include "ParameterTransition_Reverb_Material_Enum_structs.hpp"
 
@@ -82,32 +82,32 @@ public:
 	bool                                          Enable_Exiting_Branch;                             // 0x0452(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__Sound_ParameterTransition_V2_BP_Box_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void BndEvt__Sound_ParameterTransition_V2_BP_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void Door_Check();
-	void Door_Initialize();
-	double DoorCheck_Parameter_Math();
-	void Enable_Spectator_Trigger();
-	void ExecuteUbergraph_Sound_ParameterTransition_V2_BP(int32 EntryPoint);
-	void FMOD_Parameter_Branch();
-	double Global_DoorCheck_Parameter_Math();
-	void Global_Parameter_Branch();
-	void Global_Parameter_Exit_Branch();
-	void Initializer();
-	void Line_Trace();
-	void On_Death_Binding(class AActor* ActorRef);
-	void OnIncap(class AReadyOrNotCharacter* IncapacitatedCharacter, class AReadyOrNotCharacter* InstigatorCharacter);
-	void OnKilled(class AReadyOrNotCharacter* InstigatorCharacter, class AReadyOrNotCharacter* KilledCharacter);
-	void Player_to_Spline_Calc();
-	void ReceiveBeginPlay();
-	void Reset();
-	void Reset_Line_Trace();
-	void Reverb_Material_Parameter_Branch();
-	void Reverb_Parameter_Branch();
-	void SoundTypeCheck();
-	void Spline_Type_Set_UE5_Fix();
-	void Transition_V2();
 	void UserConstructionScript();
+	void Transition_V2();
+	void Spline_Type_Set_UE5_Fix();
+	void SoundTypeCheck();
+	void Reverb_Parameter_Branch();
+	void Reverb_Material_Parameter_Branch();
+	void Reset_Line_Trace();
+	void Reset();
+	void ReceiveBeginPlay();
+	void Player_to_Spline_Calc();
+	void OnKilled(class AReadyOrNotCharacter* InstigatorCharacter, class AReadyOrNotCharacter* KilledCharacter);
+	void OnIncap(class AReadyOrNotCharacter* IncapacitatedCharacter, class AReadyOrNotCharacter* InstigatorCharacter);
+	void On_Death_Binding(class AActor* ActorRef);
+	void Line_Trace();
+	void Initializer();
+	void Global_Parameter_Exit_Branch();
+	void Global_Parameter_Branch();
+	double Global_DoorCheck_Parameter_Math();
+	void FMOD_Parameter_Branch();
+	void ExecuteUbergraph_Sound_ParameterTransition_V2_BP(int32 EntryPoint);
+	void Enable_Spectator_Trigger();
+	double DoorCheck_Parameter_Math();
+	void Door_Initialize();
+	void Door_Check();
+	void BndEvt__Sound_ParameterTransition_V2_BP_Box_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void BndEvt__Sound_ParameterTransition_V2_BP_Box_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
 public:
 	static class UClass* StaticClass()

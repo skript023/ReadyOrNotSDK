@@ -33,6 +33,8 @@ public:
 	class UTextBlock*                             TextBlock_359;                                     // 0x02F8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
+	void TryDisplayMatchStart();
+	void OnGameStarted();
 	class FText GetText_1();
 	class FText GetText_0();
 	struct FLinearColor GetColorAndOpacity_0();
@@ -42,8 +44,6 @@ public:
 	void ExecuteUbergraph_MatchStartInformationWidget(int32 EntryPoint);
 	void CustomEvent_0();
 	void Construct();
-	void TryDisplayMatchStart();
-	void OnGameStarted();
 
 public:
 	static class UClass* StaticClass()

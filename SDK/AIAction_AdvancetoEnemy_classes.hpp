@@ -26,13 +26,13 @@ public:
 	class UAdvanceToEnemyPosition_C*              AdvancetoEnemy;                                    // 0x0060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnCreate_Blueprint(class ACyberneticController* Controller);
 	void ExecuteUbergraph_AIAction_AdvancetoEnemy(int32 EntryPoint);
 	void EndAction_Blueprint();
 	void BeginAction_Blueprint();
+	void OnCreate_Blueprint(class ACyberneticController* Controller);
 
-	bool ShouldPerformAction() const;
 	class FName GetMoveStyleOverride() const;
+	bool ShouldPerformAction() const;
 
 public:
 	static class UClass* StaticClass()

@@ -43,16 +43,16 @@ public:
 	TArray<struct FMODParam>                      Params_0;                                          // 0x0318(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void StartLoop();
-	void ReceiveBeginPlay();
-	void Reactivate();
-	void Play_SFX();
-	void OpenClose__UpdateFunc();
-	void OpenClose__FinishedFunc();
-	void ExecuteUbergraph_BP_RotatingTarget(int32 EntryPoint);
-	void Deactivate();
-	void BndEvt__BP_RotatingTarget_SM_HQ_Target_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
 	void Activate();
+	void BndEvt__BP_RotatingTarget_SM_HQ_Target_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
+	void Deactivate();
+	void ExecuteUbergraph_BP_RotatingTarget(int32 EntryPoint);
+	void OpenClose__FinishedFunc();
+	void OpenClose__UpdateFunc();
+	void Play_SFX();
+	void Reactivate();
+	void ReceiveBeginPlay();
+	void StartLoop();
 
 public:
 	static class UClass* StaticClass()

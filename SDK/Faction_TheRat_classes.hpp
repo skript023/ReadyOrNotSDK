@@ -27,10 +27,10 @@ public:
 	class ACyberneticCharacter*                   Gerard;                                            // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveTick(float DeltaSeconds);
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_Faction_TheRat(int32 EntryPoint);
 	void CustomEvent_0();
+	void ExecuteUbergraph_Faction_TheRat(int32 EntryPoint);
+	void ReceiveBeginPlay();
+	void ReceiveTick(float DeltaSeconds);
 
 public:
 	static class UClass* StaticClass()

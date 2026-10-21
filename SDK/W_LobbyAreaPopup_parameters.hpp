@@ -64,15 +64,6 @@ public:
 };
 DUMPER7_ASSERTS_W_LobbyAreaPopup_C_Get_RoundCount_Text_0;
 
-// Function W_LobbyAreaPopup.W_LobbyAreaPopup_C.DisplayText
-// 0x0018 (0x0018 - 0x0000)
-struct W_LobbyAreaPopup_C_DisplayText final
-{
-public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
-};
-DUMPER7_ASSERTS_W_LobbyAreaPopup_C_DisplayText;
-
 // Function W_LobbyAreaPopup.W_LobbyAreaPopup_C.ExecuteUbergraph_W_LobbyAreaPopup
 // 0x0028 (0x0028 - 0x0000)
 struct W_LobbyAreaPopup_C_ExecuteUbergraph_W_LobbyAreaPopup final
@@ -85,6 +76,15 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_W_LobbyAreaPopup_C_ExecuteUbergraph_W_LobbyAreaPopup;
+
+// Function W_LobbyAreaPopup.W_LobbyAreaPopup_C.DisplayText
+// 0x0018 (0x0018 - 0x0000)
+struct W_LobbyAreaPopup_C_DisplayText final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_W_LobbyAreaPopup_C_DisplayText;
 
 }
 

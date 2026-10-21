@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass WBA_LookAroundAtPatrolPoint.WBA_LookAroundAtPatrolPoint_C
-// 0x0000 (0x02C8 - 0x02C8)
+// 0x0000 (0x02C0 - 0x02C0)
 class UWBA_LookAroundAtPatrolPoint_C final : public UWorldBuildingActivity
 {
 public:

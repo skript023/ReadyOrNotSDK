@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function FleeGas_CombatMove.FleeGas_CombatMove_C.StartActivity_Blueprint
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class AAIController*                    Owner                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UFleeGas_CombatMove_C::StartActivity_Blueprint(class AAIController* Owner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FleeGas_CombatMove_C", "StartActivity_Blueprint");
-
-	Params::FleeGas_CombatMove_C_StartActivity_Blueprint Parms{};
-
-	Parms.Owner = Owner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function FleeGas_CombatMove.FleeGas_CombatMove_C.OnAIPerceptionSense
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -78,6 +58,26 @@ void UFleeGas_CombatMove_C::ExecuteUbergraph_FleeGas_CombatMove(int32 EntryPoint
 	Params::FleeGas_CombatMove_C_ExecuteUbergraph_FleeGas_CombatMove Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function FleeGas_CombatMove.FleeGas_CombatMove_C.StartActivity_Blueprint
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class AAIController*                    Owner                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UFleeGas_CombatMove_C::StartActivity_Blueprint(class AAIController* Owner)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("FleeGas_CombatMove_C", "StartActivity_Blueprint");
+
+	Params::FleeGas_CombatMove_C_StartActivity_Blueprint Parms{};
+
+	Parms.Owner = Owner;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

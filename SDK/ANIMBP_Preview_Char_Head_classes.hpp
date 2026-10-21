@@ -44,10 +44,10 @@ public:
 	double                                        LipSyncScale;                                      // 0x0C40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void BlueprintUpdateAnimation(float DeltaTimeX);
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_Preview_Char_Head_AnimGraphNode_SequenceEvaluator_F8474E6A4D398410092ACBB9BF41F8AA();
 	void ExecuteUbergraph_ANIMBP_Preview_Char_Head(int32 EntryPoint);
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_Preview_Char_Head_AnimGraphNode_SequenceEvaluator_F8474E6A4D398410092ACBB9BF41F8AA();
+	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()

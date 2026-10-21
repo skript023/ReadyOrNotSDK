@@ -17,24 +17,37 @@
 namespace SDK
 {
 
-// Function ANIMBP_CharacterTriggable_Head.ANIMBP_CharacterTriggable_Head_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function ANIMBP_CharacterTriggable_Head.ANIMBP_CharacterTriggable_Head_C.ExecuteUbergraph_ANIMBP_CharacterTriggable_Head
+// (Final, UbergraphFunction)
 // Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UANIMBP_CharacterTriggable_Head_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+void UANIMBP_CharacterTriggable_Head_C::ExecuteUbergraph_ANIMBP_CharacterTriggable_Head(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_CharacterTriggable_Head_C", "AnimGraph");
+		Func = Class->GetFunction("ANIMBP_CharacterTriggable_Head_C", "ExecuteUbergraph_ANIMBP_CharacterTriggable_Head");
 
-	Params::ANIMBP_CharacterTriggable_Head_C_AnimGraph Parms{};
+	Params::ANIMBP_CharacterTriggable_Head_C_ExecuteUbergraph_ANIMBP_CharacterTriggable_Head Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
+
+// Function ANIMBP_CharacterTriggable_Head.ANIMBP_CharacterTriggable_Head_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_CharacterTriggable_Head_AnimGraphNode_SequenceEvaluator_DA068789415B0767D317ED9D5D08724E
+// (BlueprintEvent)
+
+void UANIMBP_CharacterTriggable_Head_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_CharacterTriggable_Head_AnimGraphNode_SequenceEvaluator_DA068789415B0767D317ED9D5D08724E()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ANIMBP_CharacterTriggable_Head_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_CharacterTriggable_Head_AnimGraphNode_SequenceEvaluator_DA068789415B0767D317ED9D5D08724E");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -58,37 +71,24 @@ void UANIMBP_CharacterTriggable_Head_C::BlueprintUpdateAnimation(float DeltaTime
 }
 
 
-// Function ANIMBP_CharacterTriggable_Head.ANIMBP_CharacterTriggable_Head_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_CharacterTriggable_Head_AnimGraphNode_SequenceEvaluator_DA068789415B0767D317ED9D5D08724E
-// (BlueprintEvent)
-
-void UANIMBP_CharacterTriggable_Head_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_CharacterTriggable_Head_AnimGraphNode_SequenceEvaluator_DA068789415B0767D317ED9D5D08724E()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_CharacterTriggable_Head_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_CharacterTriggable_Head_AnimGraphNode_SequenceEvaluator_DA068789415B0767D317ED9D5D08724E");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ANIMBP_CharacterTriggable_Head.ANIMBP_CharacterTriggable_Head_C.ExecuteUbergraph_ANIMBP_CharacterTriggable_Head
-// (Final, UbergraphFunction)
+// Function ANIMBP_CharacterTriggable_Head.ANIMBP_CharacterTriggable_Head_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
-void UANIMBP_CharacterTriggable_Head_C::ExecuteUbergraph_ANIMBP_CharacterTriggable_Head(int32 EntryPoint)
+void UANIMBP_CharacterTriggable_Head_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_CharacterTriggable_Head_C", "ExecuteUbergraph_ANIMBP_CharacterTriggable_Head");
+		Func = Class->GetFunction("ANIMBP_CharacterTriggable_Head_C", "AnimGraph");
 
-	Params::ANIMBP_CharacterTriggable_Head_C_ExecuteUbergraph_ANIMBP_CharacterTriggable_Head Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::ANIMBP_CharacterTriggable_Head_C_AnimGraph Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 }

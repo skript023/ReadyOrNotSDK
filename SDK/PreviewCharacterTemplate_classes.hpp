@@ -42,11 +42,11 @@ public:
 	class UAnimMontage*                           ConversationMontage;                               // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_PreviewCharacterTemplate(int32 EntryPoint);
-	void PlayLipSyncAnimation(const class FString& Speaker, const class FString& VoiceLine);
-	void ReceiveBeginPlay();
-	void UserConstructionScript();
 	void VeryImportantHalloweenCheck();
+	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void PlayLipSyncAnimation(const class FString& Speaker, const class FString& VoiceLine);
+	void ExecuteUbergraph_PreviewCharacterTemplate(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

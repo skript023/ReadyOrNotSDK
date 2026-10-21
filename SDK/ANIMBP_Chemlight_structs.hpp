@@ -41,12 +41,5 @@ public:
 };
 DUMPER7_ASSERTS_ANIMBP_Chemlight__FAnimBlueprintGeneratedConstantData;
 
-// ScriptStruct ANIMBP_Chemlight.ANIMBP_Chemlight_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ANIMBP_Chemlight::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
-DUMPER7_ASSERTS_ANIMBP_Chemlight__FAnimBlueprintGeneratedMutableData;
-
 }
 

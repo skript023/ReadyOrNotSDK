@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function AIAction_AdvancetoEnemy.AIAction_AdvancetoEnemy_C.OnCreate_Blueprint
-// 0x0008 (0x0008 - 0x0000)
-struct AIAction_AdvancetoEnemy_C_OnCreate_Blueprint final
-{
-public:
-	class ACyberneticController*                  Controller;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_AIAction_AdvancetoEnemy_C_OnCreate_Blueprint;
-
 // Function AIAction_AdvancetoEnemy.AIAction_AdvancetoEnemy_C.ExecuteUbergraph_AIAction_AdvancetoEnemy
 // 0x0050 (0x0050 - 0x0000)
 struct AIAction_AdvancetoEnemy_C_ExecuteUbergraph_AIAction_AdvancetoEnemy final
@@ -42,6 +33,25 @@ public:
 };
 DUMPER7_ASSERTS_AIAction_AdvancetoEnemy_C_ExecuteUbergraph_AIAction_AdvancetoEnemy;
 
+// Function AIAction_AdvancetoEnemy.AIAction_AdvancetoEnemy_C.OnCreate_Blueprint
+// 0x0008 (0x0008 - 0x0000)
+struct AIAction_AdvancetoEnemy_C_OnCreate_Blueprint final
+{
+public:
+	class ACyberneticController*                  Controller;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_AIAction_AdvancetoEnemy_C_OnCreate_Blueprint;
+
+// Function AIAction_AdvancetoEnemy.AIAction_AdvancetoEnemy_C.GetMoveStyleOverride
+// 0x0010 (0x0010 - 0x0000)
+struct AIAction_AdvancetoEnemy_C_GetMoveStyleOverride final
+{
+public:
+	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ACyberneticCharacter*                   CallFunc_GetCharacter_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_AIAction_AdvancetoEnemy_C_GetMoveStyleOverride;
+
 // Function AIAction_AdvancetoEnemy.AIAction_AdvancetoEnemy_C.ShouldPerformAction
 // 0x0020 (0x0020 - 0x0000)
 struct AIAction_AdvancetoEnemy_C_ShouldPerformAction final
@@ -54,16 +64,6 @@ public:
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_AIAction_AdvancetoEnemy_C_ShouldPerformAction;
-
-// Function AIAction_AdvancetoEnemy.AIAction_AdvancetoEnemy_C.GetMoveStyleOverride
-// 0x0010 (0x0010 - 0x0000)
-struct AIAction_AdvancetoEnemy_C_GetMoveStyleOverride final
-{
-public:
-	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACyberneticCharacter*                   CallFunc_GetCharacter_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_AIAction_AdvancetoEnemy_C_GetMoveStyleOverride;
 
 }
 

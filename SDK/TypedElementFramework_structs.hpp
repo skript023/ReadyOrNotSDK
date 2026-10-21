@@ -16,6 +16,33 @@
 namespace SDK
 {
 
+// ScriptStruct TypedElementFramework.TypedElementDataStorageTag
+// 0x0001 (0x0001 - 0x0000)
+struct FTypedElementDataStorageTag
+{
+public:
+	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FTypedElementDataStorageTag;
+
+// ScriptStruct TypedElementFramework.ScriptTypedElementHandle
+// 0x0008 (0x0008 - 0x0000)
+struct alignas(0x08) FScriptTypedElementHandle final
+{
+public:
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FScriptTypedElementHandle;
+
+// ScriptStruct TypedElementFramework.ScriptTypedElementListProxy
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) FScriptTypedElementListProxy final
+{
+public:
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FScriptTypedElementListProxy;
+
 // ScriptStruct TypedElementFramework.TypedElementDataStorageColumn
 // 0x0000 (0x0000 - 0x0000)
 #pragma pack(push, 0x1)
@@ -34,15 +61,6 @@ public:
 };
 DUMPER7_ASSERTS_FTypedElementExternalObjectColumn;
 
-// ScriptStruct TypedElementFramework.ScriptTypedElementHandle
-// 0x0008 (0x0008 - 0x0000)
-struct alignas(0x08) FScriptTypedElementHandle final
-{
-public:
-	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FScriptTypedElementHandle;
-
 // ScriptStruct TypedElementFramework.TypedElementUObjectColumn
 // 0x0008 (0x0008 - 0x0000)
 struct alignas(0x04) FTypedElementUObjectColumn final : public FTypedElementDataStorageColumn
@@ -51,15 +69,6 @@ public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FTypedElementUObjectColumn;
-
-// ScriptStruct TypedElementFramework.TypedElementDataStorageTag
-// 0x0001 (0x0001 - 0x0000)
-struct FTypedElementDataStorageTag
-{
-public:
-	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FTypedElementDataStorageTag;
 
 // ScriptStruct TypedElementFramework.TypedElementWidgetConstructor
 // 0x0010 (0x0010 - 0x0000)
@@ -87,15 +96,6 @@ public:
 	uint64                                        LabelHash;                                         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FTypedElementLabelHashColumn;
-
-// ScriptStruct TypedElementFramework.ScriptTypedElementListProxy
-// 0x0010 (0x0010 - 0x0000)
-struct alignas(0x08) FScriptTypedElementListProxy final
-{
-public:
-	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FScriptTypedElementListProxy;
 
 // ScriptStruct TypedElementFramework.TypedElementSyncBackToWorldTag
 // 0x0000 (0x0001 - 0x0001)

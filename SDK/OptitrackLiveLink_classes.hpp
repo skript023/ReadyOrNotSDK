@@ -12,9 +12,9 @@
 
 #include "Engine_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "LiveLinkAnimationCore_classes.hpp"
 #include "LiveLinkInterface_structs.hpp"
 #include "LiveLinkInterface_classes.hpp"
-#include "LiveLinkAnimationCore_classes.hpp"
 
 
 namespace SDK

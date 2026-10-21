@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function AIAction_AdvancetoEnemy.AIAction_AdvancetoEnemy_C.OnCreate_Blueprint
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class ACyberneticController*            Controller                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UAIAction_AdvancetoEnemy_C::OnCreate_Blueprint(class ACyberneticController* Controller)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAction_AdvancetoEnemy_C", "OnCreate_Blueprint");
-
-	Params::AIAction_AdvancetoEnemy_C_OnCreate_Blueprint Parms{};
-
-	Parms.Controller = Controller;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function AIAction_AdvancetoEnemy.AIAction_AdvancetoEnemy_C.ExecuteUbergraph_AIAction_AdvancetoEnemy
 // (Final, UbergraphFunction)
 // Parameters:
@@ -85,23 +65,23 @@ void UAIAction_AdvancetoEnemy_C::BeginAction_Blueprint()
 }
 
 
-// Function AIAction_AdvancetoEnemy.AIAction_AdvancetoEnemy_C.ShouldPerformAction
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Function AIAction_AdvancetoEnemy.AIAction_AdvancetoEnemy_C.OnCreate_Blueprint
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ACyberneticController*            Controller                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-bool UAIAction_AdvancetoEnemy_C::ShouldPerformAction() const
+void UAIAction_AdvancetoEnemy_C::OnCreate_Blueprint(class ACyberneticController* Controller)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AIAction_AdvancetoEnemy_C", "ShouldPerformAction");
+		Func = Class->GetFunction("AIAction_AdvancetoEnemy_C", "OnCreate_Blueprint");
 
-	Params::AIAction_AdvancetoEnemy_C_ShouldPerformAction Parms{};
+	Params::AIAction_AdvancetoEnemy_C_OnCreate_Blueprint Parms{};
+
+	Parms.Controller = Controller;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
@@ -118,6 +98,26 @@ class FName UAIAction_AdvancetoEnemy_C::GetMoveStyleOverride() const
 		Func = Class->GetFunction("AIAction_AdvancetoEnemy_C", "GetMoveStyleOverride");
 
 	Params::AIAction_AdvancetoEnemy_C_GetMoveStyleOverride Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIAction_AdvancetoEnemy.AIAction_AdvancetoEnemy_C.ShouldPerformAction
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UAIAction_AdvancetoEnemy_C::ShouldPerformAction() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIAction_AdvancetoEnemy_C", "ShouldPerformAction");
+
+	Params::AIAction_AdvancetoEnemy_C_ShouldPerformAction Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

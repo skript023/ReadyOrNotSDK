@@ -16,15 +16,6 @@
 namespace SDK::Params
 {
 
-// Function FleeGas_CombatMove.FleeGas_CombatMove_C.StartActivity_Blueprint
-// 0x0008 (0x0008 - 0x0000)
-struct FleeGas_CombatMove_C_StartActivity_Blueprint final
-{
-public:
-	class AAIController*                          Owner;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_FleeGas_CombatMove_C_StartActivity_Blueprint;
-
 // Function FleeGas_CombatMove.FleeGas_CombatMove_C.OnAIPerceptionSense
 // 0x0068 (0x0068 - 0x0000)
 struct FleeGas_CombatMove_C_OnAIPerceptionSense final
@@ -47,6 +38,15 @@ public:
 	class AAIController*                          K2Node_Event_Owner;                                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_FleeGas_CombatMove_C_ExecuteUbergraph_FleeGas_CombatMove;
+
+// Function FleeGas_CombatMove.FleeGas_CombatMove_C.StartActivity_Blueprint
+// 0x0008 (0x0008 - 0x0000)
+struct FleeGas_CombatMove_C_StartActivity_Blueprint final
+{
+public:
+	class AAIController*                          Owner;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_FleeGas_CombatMove_C_StartActivity_Blueprint;
 
 // Function FleeGas_CombatMove.FleeGas_CombatMove_C.GetMoveStyleOverride
 // 0x0020 (0x0020 - 0x0000)

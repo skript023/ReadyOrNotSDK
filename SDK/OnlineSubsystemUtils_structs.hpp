@@ -171,17 +171,6 @@ public:
 };
 DUMPER7_ASSERTS_FOnlineProxyStoreOffer;
 
-// ScriptStruct OnlineSubsystemUtils.InAppPurchaseProductRequest2
-// 0x0018 (0x0018 - 0x0000)
-struct FInAppPurchaseProductRequest2 final
-{
-public:
-	class FString                                 ProductIdentifier;                                 // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsConsumable;                                     // 0x0010(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FInAppPurchaseProductRequest2;
-
 // ScriptStruct OnlineSubsystemUtils.InAppPurchaseRestoreInfo2
 // 0x0030 (0x0030 - 0x0000)
 struct FInAppPurchaseRestoreInfo2 final
@@ -192,6 +181,17 @@ public:
 	class FString                                 ValidationInfo;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FInAppPurchaseRestoreInfo2;
+
+// ScriptStruct OnlineSubsystemUtils.InAppPurchaseProductRequest2
+// 0x0018 (0x0018 - 0x0000)
+struct FInAppPurchaseProductRequest2 final
+{
+public:
+	class FString                                 ProductIdentifier;                                 // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsConsumable;                                     // 0x0010(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FInAppPurchaseProductRequest2;
 
 // ScriptStruct OnlineSubsystemUtils.PlayerReservation
 // 0x0058 (0x0058 - 0x0000)

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "ANIMBP_CharacterTriggable_Head_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
+#include "Engine_structs.hpp"
 #include "ReadyOrNot_classes.hpp"
 
 
@@ -43,10 +43,10 @@ public:
 	double                                        LipSyncScale;                                      // 0x0C38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void BlueprintUpdateAnimation(float DeltaTimeX);
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_CharacterTriggable_Head_AnimGraphNode_SequenceEvaluator_DA068789415B0767D317ED9D5D08724E();
 	void ExecuteUbergraph_ANIMBP_CharacterTriggable_Head(int32 EntryPoint);
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_CharacterTriggable_Head_AnimGraphNode_SequenceEvaluator_DA068789415B0767D317ED9D5D08724E();
+	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()

@@ -37,15 +37,15 @@ public:
 	TMulticastInlineDelegate<void()>              Event_StopCountdown;                               // 0x0328(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void UpdateTimeRemaining(double Value);
-	void ShowWarningInfo();
-	void SequenceEvent__ENTRYPOINTW_OutOfBounds_0();
-	void SequenceEvent__ENTRYPOINTW_OutOfBounds();
-	void PreConstruct(bool IsDesignTime);
-	void HideWarningInfo();
-	void FadeOut_StopCountdown();
-	void FadeIn_StartCountdown();
 	void ExecuteUbergraph_W_OutOfBounds(int32 EntryPoint);
+	void FadeIn_StartCountdown();
+	void FadeOut_StopCountdown();
+	void HideWarningInfo();
+	void PreConstruct(bool IsDesignTime);
+	void SequenceEvent__ENTRYPOINTW_OutOfBounds();
+	void SequenceEvent__ENTRYPOINTW_OutOfBounds_0();
+	void ShowWarningInfo();
+	void UpdateTimeRemaining(double Value);
 
 public:
 	static class UClass* StaticClass()

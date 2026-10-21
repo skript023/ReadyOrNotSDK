@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function Faction_TheRat.Faction_TheRat_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct Faction_TheRat_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_Faction_TheRat_C_ReceiveTick;
-
 // Function Faction_TheRat.Faction_TheRat_C.ExecuteUbergraph_Faction_TheRat
 // 0x0008 (0x0008 - 0x0000)
 struct Faction_TheRat_C_ExecuteUbergraph_Faction_TheRat final
@@ -32,6 +23,15 @@ public:
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_Faction_TheRat_C_ExecuteUbergraph_Faction_TheRat;
+
+// Function Faction_TheRat.Faction_TheRat_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct Faction_TheRat_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_Faction_TheRat_C_ReceiveTick;
 
 }
 

@@ -27,8 +27,8 @@ public:
 
 public:
 	void OnCreate_Blueprint(class ACyberneticController* Controller);
-	void ExecuteUbergraph_AIAction_SeekPlayer(int32 EntryPoint);
 	void BeginAction_Blueprint();
+	void ExecuteUbergraph_AIAction_SeekPlayer(int32 EntryPoint);
 
 	bool ShouldPerformAction() const;
 

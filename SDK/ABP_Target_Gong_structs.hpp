@@ -16,13 +16,6 @@
 namespace SDK
 {
 
-// ScriptStruct ABP_Target_Gong.ABP_Target_Gong_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ABP_Target_Gong::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
-DUMPER7_ASSERTS_ABP_Target_Gong__FAnimBlueprintGeneratedMutableData;
-
 // ScriptStruct ABP_Target_Gong.ABP_Target_Gong_C.AnimBlueprintGeneratedConstantData
 // 0x0107 (0x0108 - 0x0001)
 struct ABP_Target_Gong::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData

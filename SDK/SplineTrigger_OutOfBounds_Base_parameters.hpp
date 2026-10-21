@@ -17,46 +17,6 @@
 namespace SDK::Params
 {
 
-// Function SplineTrigger_OutOfBounds_Base.SplineTrigger_OutOfBounds_Base_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct SplineTrigger_OutOfBounds_Base_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_SplineTrigger_OutOfBounds_Base_C_ReceiveTick;
-
-// Function SplineTrigger_OutOfBounds_Base.SplineTrigger_OutOfBounds_Base_C.PlaySplineExitVoiceLine
-// 0x0018 (0x0018 - 0x0000)
-struct SplineTrigger_OutOfBounds_Base_C_PlaySplineExitVoiceLine final
-{
-public:
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFMODEventInstance                     CallFunc_PlayEvent2D_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_SplineTrigger_OutOfBounds_Base_C_PlaySplineExitVoiceLine;
-
-// Function SplineTrigger_OutOfBounds_Base.SplineTrigger_OutOfBounds_Base_C.OnSplineEnclosureExited
-// 0x0008 (0x0008 - 0x0000)
-struct SplineTrigger_OutOfBounds_Base_C_OnSplineEnclosureExited final
-{
-public:
-	class APlayerCharacter*                       PlayerCharacter_0;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_SplineTrigger_OutOfBounds_Base_C_OnSplineEnclosureExited;
-
-// Function SplineTrigger_OutOfBounds_Base.SplineTrigger_OutOfBounds_Base_C.OnSplineEnclosureEntered
-// 0x0008 (0x0008 - 0x0000)
-struct SplineTrigger_OutOfBounds_Base_C_OnSplineEnclosureEntered final
-{
-public:
-	class APlayerCharacter*                       PlayerCharacter_0;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_SplineTrigger_OutOfBounds_Base_C_OnSplineEnclosureEntered;
-
 // Function SplineTrigger_OutOfBounds_Base.SplineTrigger_OutOfBounds_Base_C.ExecuteUbergraph_SplineTrigger_OutOfBounds_Base
 // 0x01B0 (0x01B0 - 0x0000)
 struct SplineTrigger_OutOfBounds_Base_C_ExecuteUbergraph_SplineTrigger_OutOfBounds_Base final
@@ -137,6 +97,46 @@ public:
 	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_SplineTrigger_OutOfBounds_Base_C_ExecuteUbergraph_SplineTrigger_OutOfBounds_Base;
+
+// Function SplineTrigger_OutOfBounds_Base.SplineTrigger_OutOfBounds_Base_C.OnSplineEnclosureEntered
+// 0x0008 (0x0008 - 0x0000)
+struct SplineTrigger_OutOfBounds_Base_C_OnSplineEnclosureEntered final
+{
+public:
+	class APlayerCharacter*                       PlayerCharacter_0;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_SplineTrigger_OutOfBounds_Base_C_OnSplineEnclosureEntered;
+
+// Function SplineTrigger_OutOfBounds_Base.SplineTrigger_OutOfBounds_Base_C.OnSplineEnclosureExited
+// 0x0008 (0x0008 - 0x0000)
+struct SplineTrigger_OutOfBounds_Base_C_OnSplineEnclosureExited final
+{
+public:
+	class APlayerCharacter*                       PlayerCharacter_0;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_SplineTrigger_OutOfBounds_Base_C_OnSplineEnclosureExited;
+
+// Function SplineTrigger_OutOfBounds_Base.SplineTrigger_OutOfBounds_Base_C.PlaySplineExitVoiceLine
+// 0x0018 (0x0018 - 0x0000)
+struct SplineTrigger_OutOfBounds_Base_C_PlaySplineExitVoiceLine final
+{
+public:
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFMODEventInstance                     CallFunc_PlayEvent2D_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_SplineTrigger_OutOfBounds_Base_C_PlaySplineExitVoiceLine;
+
+// Function SplineTrigger_OutOfBounds_Base.SplineTrigger_OutOfBounds_Base_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct SplineTrigger_OutOfBounds_Base_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_SplineTrigger_OutOfBounds_Base_C_ReceiveTick;
 
 }
 

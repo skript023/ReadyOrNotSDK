@@ -151,25 +151,26 @@ enum class EModioUIFeatureFlags : uint8
 	EModioUIFeatureFlags_MAX                 = 3,
 };
 
-// ScriptStruct ModioUICore.ModioUIComponentMetadata
-// 0x0020 (0x0020 - 0x0000)
-struct FModioUIComponentMetadata
+// ScriptStruct ModioUICore.LinearColorRef
+// 0x0018 (0x0018 - 0x0000)
+struct FLinearColorRef final
 {
 public:
-	TArray<class UClass*>                         RequiredInterfaces;                                // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
-	EModioUIComponentID                           ComponentID;                                       // 0x0010(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   ComponentDisplayName;                              // 0x0014(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class FName                                   ReferencedColorName;                               // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           FallbackColor;                                     // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FModioUIComponentMetadata;
+DUMPER7_ASSERTS_FLinearColorRef;
 
-// ScriptStruct ModioUICore.ModioUIPresetFilterSelectorEntryComponentMetadata
-// 0x0000 (0x0020 - 0x0020)
-struct FModioUIPresetFilterSelectorEntryComponentMetadata final : public FModioUIComponentMetadata
+// ScriptStruct ModioUICore.LinearColorRefOverride
+// 0x001C (0x001C - 0x0000)
+struct FLinearColorRefOverride final
 {
+public:
+	bool                                          bOverride;                                         // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColorRef                        Color;                                             // 0x0004(0x0018)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FModioUIPresetFilterSelectorEntryComponentMetadata;
+DUMPER7_ASSERTS_FLinearColorRefOverride;
 
 // ScriptStruct ModioUICore.ModioDefaultCodeInputTextBoxStyle
 // 0x02B0 (0x05F0 - 0x0340)
@@ -221,27 +222,6 @@ public:
 	struct FLinearColor                           Color;                                             // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FModioUIColorEntry;
-
-// ScriptStruct ModioUICore.LinearColorRef
-// 0x0018 (0x0018 - 0x0000)
-struct FLinearColorRef final
-{
-public:
-	class FName                                   ReferencedColorName;                               // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           FallbackColor;                                     // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FLinearColorRef;
-
-// ScriptStruct ModioUICore.LinearColorRefOverride
-// 0x001C (0x001C - 0x0000)
-struct FLinearColorRefOverride final
-{
-public:
-	bool                                          bOverride;                                         // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColorRef                        Color;                                             // 0x0004(0x0018)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FLinearColorRefOverride;
 
 // ScriptStruct ModioUICore.TextOverride
 // 0x0020 (0x0020 - 0x0000)
@@ -401,6 +381,19 @@ public:
 };
 DUMPER7_ASSERTS_FModioStackedBool;
 
+// ScriptStruct ModioUICore.ModioUIComponentMetadata
+// 0x0020 (0x0020 - 0x0000)
+struct FModioUIComponentMetadata
+{
+public:
+	TArray<class UClass*>                         RequiredInterfaces;                                // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+	EModioUIComponentID                           ComponentID;                                       // 0x0010(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   ComponentDisplayName;                              // 0x0014(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FModioUIComponentMetadata;
+
 // ScriptStruct ModioUICore.ModioUIButtonComponentMetadata
 // 0x0000 (0x0020 - 0x0020)
 struct FModioUIButtonComponentMetadata final : public FModioUIComponentMetadata
@@ -484,6 +477,13 @@ struct FModioUIPresetFilterSelectorComponentMetadata final : public FModioUIComp
 {
 };
 DUMPER7_ASSERTS_FModioUIPresetFilterSelectorComponentMetadata;
+
+// ScriptStruct ModioUICore.ModioUIPresetFilterSelectorEntryComponentMetadata
+// 0x0000 (0x0020 - 0x0020)
+struct FModioUIPresetFilterSelectorEntryComponentMetadata final : public FModioUIComponentMetadata
+{
+};
+DUMPER7_ASSERTS_FModioUIPresetFilterSelectorEntryComponentMetadata;
 
 // ScriptStruct ModioUICore.ModioUICommandMenuComponentMetadata
 // 0x0000 (0x0020 - 0x0020)

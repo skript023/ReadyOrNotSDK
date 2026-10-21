@@ -17,119 +17,15 @@
 namespace SDK
 {
 
-// Function BP_RotatingTarget.BP_RotatingTarget_C.StartLoop
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_RotatingTarget_C::StartLoop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RotatingTarget_C", "StartLoop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RotatingTarget.BP_RotatingTarget_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_RotatingTarget_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RotatingTarget_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RotatingTarget.BP_RotatingTarget_C.Reactivate
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_RotatingTarget_C::Reactivate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RotatingTarget_C", "Reactivate");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RotatingTarget.BP_RotatingTarget_C.Play_SFX
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_RotatingTarget_C::Play_SFX()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RotatingTarget_C", "Play_SFX");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RotatingTarget.BP_RotatingTarget_C.OpenClose__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_RotatingTarget_C::OpenClose__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RotatingTarget_C", "OpenClose__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RotatingTarget.BP_RotatingTarget_C.OpenClose__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_RotatingTarget_C::OpenClose__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RotatingTarget_C", "OpenClose__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RotatingTarget.BP_RotatingTarget_C.ExecuteUbergraph_BP_RotatingTarget
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RotatingTarget_C::ExecuteUbergraph_BP_RotatingTarget(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RotatingTarget_C", "ExecuteUbergraph_BP_RotatingTarget");
-
-	Params::BP_RotatingTarget_C_ExecuteUbergraph_BP_RotatingTarget Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_RotatingTarget.BP_RotatingTarget_C.Deactivate
+// Function BP_RotatingTarget.BP_RotatingTarget_C.Activate
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_RotatingTarget_C::Deactivate()
+void ABP_RotatingTarget_C::Activate()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RotatingTarget_C", "Deactivate");
+		Func = Class->GetFunction("BP_RotatingTarget_C", "Activate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -163,15 +59,119 @@ void ABP_RotatingTarget_C::BndEvt__BP_RotatingTarget_SM_HQ_Target_K2Node_Compone
 }
 
 
-// Function BP_RotatingTarget.BP_RotatingTarget_C.Activate
+// Function BP_RotatingTarget.BP_RotatingTarget_C.Deactivate
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_RotatingTarget_C::Activate()
+void ABP_RotatingTarget_C::Deactivate()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RotatingTarget_C", "Activate");
+		Func = Class->GetFunction("BP_RotatingTarget_C", "Deactivate");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RotatingTarget.BP_RotatingTarget_C.ExecuteUbergraph_BP_RotatingTarget
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RotatingTarget_C::ExecuteUbergraph_BP_RotatingTarget(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RotatingTarget_C", "ExecuteUbergraph_BP_RotatingTarget");
+
+	Params::BP_RotatingTarget_C_ExecuteUbergraph_BP_RotatingTarget Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_RotatingTarget.BP_RotatingTarget_C.OpenClose__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_RotatingTarget_C::OpenClose__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RotatingTarget_C", "OpenClose__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RotatingTarget.BP_RotatingTarget_C.OpenClose__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_RotatingTarget_C::OpenClose__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RotatingTarget_C", "OpenClose__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RotatingTarget.BP_RotatingTarget_C.Play_SFX
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_RotatingTarget_C::Play_SFX()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RotatingTarget_C", "Play_SFX");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RotatingTarget.BP_RotatingTarget_C.Reactivate
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_RotatingTarget_C::Reactivate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RotatingTarget_C", "Reactivate");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RotatingTarget.BP_RotatingTarget_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_RotatingTarget_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RotatingTarget_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RotatingTarget.BP_RotatingTarget_C.StartLoop
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_RotatingTarget_C::StartLoop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RotatingTarget_C", "StartLoop");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

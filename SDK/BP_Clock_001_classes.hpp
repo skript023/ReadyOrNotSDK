@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
+#include "ENUM_Clock_002_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "ENUM_Clock_002_structs.hpp"
 #include "ENUM_CLock_001_structs.hpp"
 
 

@@ -42,22 +42,22 @@ public:
 	struct FTimerHandle                           TH_VoiceLineCooldownExpiry;                        // 0x0398(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void StopCountdown_Event_0();
-	void StartCountdown_Event_0();
-	void ReceiveTick(float DeltaSeconds);
-	void ReceiveBeginPlay();
-	void PlaySplineExitVoiceLine();
-	void OnSplineEnclosureExited(class APlayerCharacter* PlayerCharacter_0);
-	void OnSplineEnclosureEntered(class APlayerCharacter* PlayerCharacter_0);
-	void OnAnimFinished();
-	void HideOutOfBoundsWidget();
-	void Greyscale_Timeline__UpdateFunc();
-	void Greyscale_Timeline__FinishedFunc();
-	void ExecuteUbergraph_SplineTrigger_OutOfBounds_Base(int32 EntryPoint);
-	void DestroyOutOfBoundsWidget();
-	void Delegate_OnOutOfBoundsTimeLimitEnded_Event_0();
-	void CustomEvent_1();
 	void CustomEvent_0();
+	void CustomEvent_1();
+	void Delegate_OnOutOfBoundsTimeLimitEnded_Event_0();
+	void DestroyOutOfBoundsWidget();
+	void ExecuteUbergraph_SplineTrigger_OutOfBounds_Base(int32 EntryPoint);
+	void Greyscale_Timeline__FinishedFunc();
+	void Greyscale_Timeline__UpdateFunc();
+	void HideOutOfBoundsWidget();
+	void OnAnimFinished();
+	void OnSplineEnclosureEntered(class APlayerCharacter* PlayerCharacter_0);
+	void OnSplineEnclosureExited(class APlayerCharacter* PlayerCharacter_0);
+	void PlaySplineExitVoiceLine();
+	void ReceiveBeginPlay();
+	void ReceiveTick(float DeltaSeconds);
+	void StartCountdown_Event_0();
+	void StopCountdown_Event_0();
 
 public:
 	static class UClass* StaticClass()

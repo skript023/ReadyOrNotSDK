@@ -37,10 +37,10 @@ public:
 	double                                        TacphoneTransform_Alpha;                           // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Get_Player_Character(class APlayerCharacter** PlayerCharacter);
-	void ExecuteUbergraph_ANIMBP_TacPhone(int32 EntryPoint);
-	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void ExecuteUbergraph_ANIMBP_TacPhone(int32 EntryPoint);
+	void Get_Player_Character(class APlayerCharacter** PlayerCharacter);
 
 public:
 	static class UClass* StaticClass()

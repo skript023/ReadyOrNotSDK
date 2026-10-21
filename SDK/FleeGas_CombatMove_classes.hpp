@@ -28,9 +28,9 @@ public:
 	double                                        Time_Of_Last_Move_Calc;                            // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void StartActivity_Blueprint(class AAIController* Owner);
 	void OnAIPerceptionSense(class ACyberneticController* InSenseController, const struct FAIStimulus& Stimulus, class AActor** OutOverrideSensedActor);
 	void ExecuteUbergraph_FleeGas_CombatMove(int32 EntryPoint);
+	void StartActivity_Blueprint(class AAIController* Owner);
 
 	class FName GetMoveStyleOverride() const;
 

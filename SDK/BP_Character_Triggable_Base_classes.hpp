@@ -53,14 +53,14 @@ public:
 	bool                                          bConversationComplete;                             // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Character_Triggable_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void BndEvt__BP_Character_Triggable_Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void ConversationComplete();
-	void ExecuteUbergraph_BP_Character_Triggable_Base(int32 EntryPoint);
-	void PlayLipSyncAnimation(const class FString& Speaker, const class FString& VoiceLine);
-	void ReceiveBeginPlay();
-	void SetupFaceAnimInstance();
 	void UserConstructionScript();
+	void SetupFaceAnimInstance();
+	void ReceiveBeginPlay();
+	void PlayLipSyncAnimation(const class FString& Speaker, const class FString& VoiceLine);
+	void ExecuteUbergraph_BP_Character_Triggable_Base(int32 EntryPoint);
+	void ConversationComplete();
+	void BndEvt__BP_Character_Triggable_Box_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void BndEvt__BP_Character_Triggable_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 
 public:
 	static class UClass* StaticClass()

@@ -17,24 +17,37 @@
 namespace SDK
 {
 
-// Function ANIMBP_Preview_Char_Head.ANIMBP_Preview_Char_Head_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function ANIMBP_Preview_Char_Head.ANIMBP_Preview_Char_Head_C.ExecuteUbergraph_ANIMBP_Preview_Char_Head
+// (Final, UbergraphFunction)
 // Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UANIMBP_Preview_Char_Head_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+void UANIMBP_Preview_Char_Head_C::ExecuteUbergraph_ANIMBP_Preview_Char_Head(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_Preview_Char_Head_C", "AnimGraph");
+		Func = Class->GetFunction("ANIMBP_Preview_Char_Head_C", "ExecuteUbergraph_ANIMBP_Preview_Char_Head");
 
-	Params::ANIMBP_Preview_Char_Head_C_AnimGraph Parms{};
+	Params::ANIMBP_Preview_Char_Head_C_ExecuteUbergraph_ANIMBP_Preview_Char_Head Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
+
+// Function ANIMBP_Preview_Char_Head.ANIMBP_Preview_Char_Head_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_Preview_Char_Head_AnimGraphNode_SequenceEvaluator_F8474E6A4D398410092ACBB9BF41F8AA
+// (BlueprintEvent)
+
+void UANIMBP_Preview_Char_Head_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_Preview_Char_Head_AnimGraphNode_SequenceEvaluator_F8474E6A4D398410092ACBB9BF41F8AA()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ANIMBP_Preview_Char_Head_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_Preview_Char_Head_AnimGraphNode_SequenceEvaluator_F8474E6A4D398410092ACBB9BF41F8AA");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -58,37 +71,24 @@ void UANIMBP_Preview_Char_Head_C::BlueprintUpdateAnimation(float DeltaTimeX)
 }
 
 
-// Function ANIMBP_Preview_Char_Head.ANIMBP_Preview_Char_Head_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_Preview_Char_Head_AnimGraphNode_SequenceEvaluator_F8474E6A4D398410092ACBB9BF41F8AA
-// (BlueprintEvent)
-
-void UANIMBP_Preview_Char_Head_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_Preview_Char_Head_AnimGraphNode_SequenceEvaluator_F8474E6A4D398410092ACBB9BF41F8AA()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_Preview_Char_Head_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ANIMBP_Preview_Char_Head_AnimGraphNode_SequenceEvaluator_F8474E6A4D398410092ACBB9BF41F8AA");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ANIMBP_Preview_Char_Head.ANIMBP_Preview_Char_Head_C.ExecuteUbergraph_ANIMBP_Preview_Char_Head
-// (Final, UbergraphFunction)
+// Function ANIMBP_Preview_Char_Head.ANIMBP_Preview_Char_Head_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
-void UANIMBP_Preview_Char_Head_C::ExecuteUbergraph_ANIMBP_Preview_Char_Head(int32 EntryPoint)
+void UANIMBP_Preview_Char_Head_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ANIMBP_Preview_Char_Head_C", "ExecuteUbergraph_ANIMBP_Preview_Char_Head");
+		Func = Class->GetFunction("ANIMBP_Preview_Char_Head_C", "AnimGraph");
 
-	Params::ANIMBP_Preview_Char_Head_C_ExecuteUbergraph_ANIMBP_Preview_Char_Head Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::ANIMBP_Preview_Char_Head_C_AnimGraph Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 }

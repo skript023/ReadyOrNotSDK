@@ -17,6 +17,34 @@
 namespace SDK
 {
 
+// Function MatchStartInformationWidget.MatchStartInformationWidget_C.TryDisplayMatchStart
+// (BlueprintCallable, BlueprintEvent)
+
+void UMatchStartInformationWidget_C::TryDisplayMatchStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MatchStartInformationWidget_C", "TryDisplayMatchStart");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MatchStartInformationWidget.MatchStartInformationWidget_C.OnGameStarted
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UMatchStartInformationWidget_C::OnGameStarted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MatchStartInformationWidget_C", "OnGameStarted");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function MatchStartInformationWidget.MatchStartInformationWidget_C.GetText_1
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -174,34 +202,6 @@ void UMatchStartInformationWidget_C::Construct()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("MatchStartInformationWidget_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MatchStartInformationWidget.MatchStartInformationWidget_C.TryDisplayMatchStart
-// (BlueprintCallable, BlueprintEvent)
-
-void UMatchStartInformationWidget_C::TryDisplayMatchStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MatchStartInformationWidget_C", "TryDisplayMatchStart");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MatchStartInformationWidget.MatchStartInformationWidget_C.OnGameStarted
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UMatchStartInformationWidget_C::OnGameStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MatchStartInformationWidget_C", "OnGameStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

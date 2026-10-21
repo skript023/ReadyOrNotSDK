@@ -17,24 +17,6 @@
 namespace SDK::Params
 {
 
-// Function AIAction_Startle.AIAction_Startle_C.Tick_Blueprint
-// 0x0004 (0x0004 - 0x0000)
-struct AIAction_Startle_C_Tick_Blueprint final
-{
-public:
-	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_AIAction_Startle_C_Tick_Blueprint;
-
-// Function AIAction_Startle.AIAction_Startle_C.InitAction_Blueprint
-// 0x0008 (0x0008 - 0x0000)
-struct AIAction_Startle_C_InitAction_Blueprint final
-{
-public:
-	class ACyberneticController*                  Controller;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_AIAction_Startle_C_InitAction_Blueprint;
-
 // Function AIAction_Startle.AIAction_Startle_C.ExecuteUbergraph_AIAction_Startle
 // 0x0178 (0x0178 - 0x0000)
 struct AIAction_Startle_C_ExecuteUbergraph_AIAction_Startle final
@@ -87,31 +69,23 @@ public:
 };
 DUMPER7_ASSERTS_AIAction_Startle_C_ExecuteUbergraph_AIAction_Startle;
 
-// Function AIAction_Startle.AIAction_Startle_C.ShouldPerformAction
-// 0x0001 (0x0001 - 0x0000)
-struct AIAction_Startle_C_ShouldPerformAction final
+// Function AIAction_Startle.AIAction_Startle_C.InitAction_Blueprint
+// 0x0008 (0x0008 - 0x0000)
+struct AIAction_Startle_C_InitAction_Blueprint final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ACyberneticController*                  Controller;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_AIAction_Startle_C_ShouldPerformAction;
+DUMPER7_ASSERTS_AIAction_Startle_C_InitAction_Blueprint;
 
-// Function AIAction_Startle.AIAction_Startle_C.IsLocationRightOfUs
-// 0x0080 (0x0080 - 0x0000)
-struct AIAction_Startle_C_IsLocationRightOfUs final
+// Function AIAction_Startle.AIAction_Startle_C.Tick_Blueprint
+// 0x0004 (0x0004 - 0x0000)
+struct AIAction_Startle_C_Tick_Blueprint final
 {
 public:
-	struct FVector                                InLocation;                                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ACyberneticCharacter*                   CallFunc_GetCharacter_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Dot_VectorVector_ReturnValue;             // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_AIAction_Startle_C_IsLocationRightOfUs;
+DUMPER7_ASSERTS_AIAction_Startle_C_Tick_Blueprint;
 
 // Function AIAction_Startle.AIAction_Startle_C.CanStartle
 // 0x0150 (0x0150 - 0x0000)
@@ -189,6 +163,32 @@ public:
 	class FString                                 K2Node_Select_Default_2;                           // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_AIAction_Startle_C_AngleToAnimation;
+
+// Function AIAction_Startle.AIAction_Startle_C.IsLocationRightOfUs
+// 0x0080 (0x0080 - 0x0000)
+struct AIAction_Startle_C_IsLocationRightOfUs final
+{
+public:
+	struct FVector                                InLocation;                                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ACyberneticCharacter*                   CallFunc_GetCharacter_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Dot_VectorVector_ReturnValue;             // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_AIAction_Startle_C_IsLocationRightOfUs;
+
+// Function AIAction_Startle.AIAction_Startle_C.ShouldPerformAction
+// 0x0001 (0x0001 - 0x0000)
+struct AIAction_Startle_C_ShouldPerformAction final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_AIAction_Startle_C_ShouldPerformAction;
 
 }
 

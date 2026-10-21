@@ -41,12 +41,5 @@ public:
 };
 DUMPER7_ASSERTS_ANIMBP_C2_Clacker__FAnimBlueprintGeneratedConstantData;
 
-// ScriptStruct ANIMBP_C2_Clacker.ANIMBP_C2_Clacker_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ANIMBP_C2_Clacker::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
-DUMPER7_ASSERTS_ANIMBP_C2_Clacker__FAnimBlueprintGeneratedMutableData;
-
 }
 

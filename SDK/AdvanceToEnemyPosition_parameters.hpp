@@ -16,23 +16,31 @@
 namespace SDK::Params
 {
 
-// Function AdvanceToEnemyPosition.AdvanceToEnemyPosition_C.StartActivity_Blueprint
-// 0x0008 (0x0008 - 0x0000)
-struct AdvanceToEnemyPosition_C_StartActivity_Blueprint final
+// Function AdvanceToEnemyPosition.AdvanceToEnemyPosition_C.ExecuteUbergraph_AdvanceToEnemyPosition
+// 0x0068 (0x0068 - 0x0000)
+struct AdvanceToEnemyPosition_C_ExecuteUbergraph_AdvanceToEnemyPosition final
 {
 public:
-	class AAIController*                          Owner;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetTargetPos_TargetPosition;              // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaTime;                            // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ACyberneticController*                  CallFunc_GetOwningController_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ACyberneticController*                  CallFunc_GetOwningController_ReturnValue_1;        // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AReadyOrNotCharacter*                   CallFunc_GetTrackedTarget_ReturnValue;             // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsCharacterEnemy_ReturnValue;             // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetDistanceBetweenActors_ReturnValue;     // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class AAIController*                          K2Node_Event_Owner;                                // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_LessEqual_DoubleDouble_A_ImplicitCast;    // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_AdvanceToEnemyPosition_C_StartActivity_Blueprint;
-
-// Function AdvanceToEnemyPosition.AdvanceToEnemyPosition_C.RequestCombatMove_Blueprint
-// 0x0004 (0x0004 - 0x0000)
-struct AdvanceToEnemyPosition_C_RequestCombatMove_Blueprint final
-{
-public:
-	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_AdvanceToEnemyPosition_C_RequestCombatMove_Blueprint;
+DUMPER7_ASSERTS_AdvanceToEnemyPosition_C_ExecuteUbergraph_AdvanceToEnemyPosition;
 
 // Function AdvanceToEnemyPosition.AdvanceToEnemyPosition_C.GetTargetPos
 // 0x0158 (0x0158 - 0x0000)
@@ -91,31 +99,23 @@ public:
 };
 DUMPER7_ASSERTS_AdvanceToEnemyPosition_C_GetTargetPos;
 
-// Function AdvanceToEnemyPosition.AdvanceToEnemyPosition_C.ExecuteUbergraph_AdvanceToEnemyPosition
-// 0x0068 (0x0068 - 0x0000)
-struct AdvanceToEnemyPosition_C_ExecuteUbergraph_AdvanceToEnemyPosition final
+// Function AdvanceToEnemyPosition.AdvanceToEnemyPosition_C.RequestCombatMove_Blueprint
+// 0x0004 (0x0004 - 0x0000)
+struct AdvanceToEnemyPosition_C_RequestCombatMove_Blueprint final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetTargetPos_TargetPosition;              // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaTime;                            // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ACyberneticController*                  CallFunc_GetOwningController_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ACyberneticController*                  CallFunc_GetOwningController_ReturnValue_1;        // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AReadyOrNotCharacter*                   CallFunc_GetTrackedTarget_ReturnValue;             // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsCharacterEnemy_ReturnValue;             // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetDistanceBetweenActors_ReturnValue;     // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class AAIController*                          K2Node_Event_Owner;                                // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_LessEqual_DoubleDouble_A_ImplicitCast;    // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_AdvanceToEnemyPosition_C_ExecuteUbergraph_AdvanceToEnemyPosition;
+DUMPER7_ASSERTS_AdvanceToEnemyPosition_C_RequestCombatMove_Blueprint;
+
+// Function AdvanceToEnemyPosition.AdvanceToEnemyPosition_C.StartActivity_Blueprint
+// 0x0008 (0x0008 - 0x0000)
+struct AdvanceToEnemyPosition_C_StartActivity_Blueprint final
+{
+public:
+	class AAIController*                          Owner;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_AdvanceToEnemyPosition_C_StartActivity_Blueprint;
 
 }
 

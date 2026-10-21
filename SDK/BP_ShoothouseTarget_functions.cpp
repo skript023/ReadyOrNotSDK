@@ -17,40 +17,6 @@
 namespace SDK
 {
 
-// Function BP_ShoothouseTarget.BP_ShoothouseTarget_C.ExecuteUbergraph_BP_ShoothouseTarget
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShoothouseTarget_C::ExecuteUbergraph_BP_ShoothouseTarget(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShoothouseTarget_C", "ExecuteUbergraph_BP_ShoothouseTarget");
-
-	Params::BP_ShoothouseTarget_C_ExecuteUbergraph_BP_ShoothouseTarget Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShoothouseTarget.BP_ShoothouseTarget_C.DestroyAllDecals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_ShoothouseTarget_C::DestroyAllDecals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShoothouseTarget_C", "DestroyAllDecals");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_ShoothouseTarget.BP_ShoothouseTarget_C.Reset
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -117,27 +83,37 @@ void ABP_ShoothouseTarget_C::ReceiveBeginPlay()
 }
 
 
-// Function BP_ShoothouseTarget.BP_ShoothouseTarget_C.HitAnyFailureBox
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function BP_ShoothouseTarget.BP_ShoothouseTarget_C.ExecuteUbergraph_BP_ShoothouseTarget
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const struct FVector&                   HitLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShoothouseTarget_C::HitAnyFailureBox(const struct FVector& HitLocation, bool* Return_Value) const
+void ABP_ShoothouseTarget_C::ExecuteUbergraph_BP_ShoothouseTarget(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShoothouseTarget_C", "HitAnyFailureBox");
+		Func = Class->GetFunction("BP_ShoothouseTarget_C", "ExecuteUbergraph_BP_ShoothouseTarget");
 
-	Params::BP_ShoothouseTarget_C_HitAnyFailureBox Parms{};
+	Params::BP_ShoothouseTarget_C_ExecuteUbergraph_BP_ShoothouseTarget Parms{};
 
-	Parms.HitLocation = std::move(HitLocation);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+
+// Function BP_ShoothouseTarget.BP_ShoothouseTarget_C.DestroyAllDecals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_ShoothouseTarget_C::DestroyAllDecals()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ShoothouseTarget_C", "DestroyAllDecals");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -155,6 +131,30 @@ void ABP_ShoothouseTarget_C::HitAnySuccessBox(const struct FVector& HitLocation,
 		Func = Class->GetFunction("BP_ShoothouseTarget_C", "HitAnySuccessBox");
 
 	Params::BP_ShoothouseTarget_C_HitAnySuccessBox Parms{};
+
+	Parms.HitLocation = std::move(HitLocation);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return_Value != nullptr)
+		*Return_Value = Parms.Return_Value;
+}
+
+
+// Function BP_ShoothouseTarget.BP_ShoothouseTarget_C.HitAnyFailureBox
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// const struct FVector&                   HitLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShoothouseTarget_C::HitAnyFailureBox(const struct FVector& HitLocation, bool* Return_Value) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ShoothouseTarget_C", "HitAnyFailureBox");
+
+	Params::BP_ShoothouseTarget_C_HitAnyFailureBox Parms{};
 
 	Parms.HitLocation = std::move(HitLocation);
 

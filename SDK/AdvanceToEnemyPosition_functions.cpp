@@ -17,41 +17,21 @@
 namespace SDK
 {
 
-// Function AdvanceToEnemyPosition.AdvanceToEnemyPosition_C.StartActivity_Blueprint
-// (Event, Public, BlueprintEvent)
+// Function AdvanceToEnemyPosition.AdvanceToEnemyPosition_C.ExecuteUbergraph_AdvanceToEnemyPosition
+// (Final, UbergraphFunction)
 // Parameters:
-// class AAIController*                    Owner                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAdvanceToEnemyPosition_C::StartActivity_Blueprint(class AAIController* Owner)
+void UAdvanceToEnemyPosition_C::ExecuteUbergraph_AdvanceToEnemyPosition(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AdvanceToEnemyPosition_C", "StartActivity_Blueprint");
+		Func = Class->GetFunction("AdvanceToEnemyPosition_C", "ExecuteUbergraph_AdvanceToEnemyPosition");
 
-	Params::AdvanceToEnemyPosition_C_StartActivity_Blueprint Parms{};
+	Params::AdvanceToEnemyPosition_C_ExecuteUbergraph_AdvanceToEnemyPosition Parms{};
 
-	Parms.Owner = Owner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AdvanceToEnemyPosition.AdvanceToEnemyPosition_C.RequestCombatMove_Blueprint
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAdvanceToEnemyPosition_C::RequestCombatMove_Blueprint(float DeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AdvanceToEnemyPosition_C", "RequestCombatMove_Blueprint");
-
-	Params::AdvanceToEnemyPosition_C_RequestCombatMove_Blueprint Parms{};
-
-	Parms.DeltaTime = DeltaTime;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -78,21 +58,41 @@ void UAdvanceToEnemyPosition_C::GetTargetPos(struct FVector* TargetPosition)
 }
 
 
-// Function AdvanceToEnemyPosition.AdvanceToEnemyPosition_C.ExecuteUbergraph_AdvanceToEnemyPosition
-// (Final, UbergraphFunction)
+// Function AdvanceToEnemyPosition.AdvanceToEnemyPosition_C.RequestCombatMove_Blueprint
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAdvanceToEnemyPosition_C::ExecuteUbergraph_AdvanceToEnemyPosition(int32 EntryPoint)
+void UAdvanceToEnemyPosition_C::RequestCombatMove_Blueprint(float DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AdvanceToEnemyPosition_C", "ExecuteUbergraph_AdvanceToEnemyPosition");
+		Func = Class->GetFunction("AdvanceToEnemyPosition_C", "RequestCombatMove_Blueprint");
 
-	Params::AdvanceToEnemyPosition_C_ExecuteUbergraph_AdvanceToEnemyPosition Parms{};
+	Params::AdvanceToEnemyPosition_C_RequestCombatMove_Blueprint Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.DeltaTime = DeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AdvanceToEnemyPosition.AdvanceToEnemyPosition_C.StartActivity_Blueprint
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class AAIController*                    Owner                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UAdvanceToEnemyPosition_C::StartActivity_Blueprint(class AAIController* Owner)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AdvanceToEnemyPosition_C", "StartActivity_Blueprint");
+
+	Params::AdvanceToEnemyPosition_C_StartActivity_Blueprint Parms{};
+
+	Parms.Owner = Owner;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

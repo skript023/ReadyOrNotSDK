@@ -16,6 +16,34 @@
 namespace SDK::Params
 {
 
+// Function ANIMBP_TacPhone.ANIMBP_TacPhone_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct ANIMBP_TacPhone_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ANIMBP_TacPhone_C_AnimGraph;
+
+// Function ANIMBP_TacPhone.ANIMBP_TacPhone_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct ANIMBP_TacPhone_C_BlueprintUpdateAnimation final
+{
+public:
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_ANIMBP_TacPhone_C_BlueprintUpdateAnimation;
+
+// Function ANIMBP_TacPhone.ANIMBP_TacPhone_C.ExecuteUbergraph_ANIMBP_TacPhone
+// 0x0008 (0x0008 - 0x0000)
+struct ANIMBP_TacPhone_C_ExecuteUbergraph_ANIMBP_TacPhone final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaTimeX;                           // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_ANIMBP_TacPhone_C_ExecuteUbergraph_ANIMBP_TacPhone;
+
 // Function ANIMBP_TacPhone.ANIMBP_TacPhone_C.Get Player Character
 // 0x0040 (0x0040 - 0x0000)
 struct ANIMBP_TacPhone_C_Get_Player_Character final
@@ -32,34 +60,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_ANIMBP_TacPhone_C_Get_Player_Character;
-
-// Function ANIMBP_TacPhone.ANIMBP_TacPhone_C.ExecuteUbergraph_ANIMBP_TacPhone
-// 0x0008 (0x0008 - 0x0000)
-struct ANIMBP_TacPhone_C_ExecuteUbergraph_ANIMBP_TacPhone final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaTimeX;                           // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_ANIMBP_TacPhone_C_ExecuteUbergraph_ANIMBP_TacPhone;
-
-// Function ANIMBP_TacPhone.ANIMBP_TacPhone_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct ANIMBP_TacPhone_C_BlueprintUpdateAnimation final
-{
-public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_ANIMBP_TacPhone_C_BlueprintUpdateAnimation;
-
-// Function ANIMBP_TacPhone.ANIMBP_TacPhone_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct ANIMBP_TacPhone_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-DUMPER7_ASSERTS_ANIMBP_TacPhone_C_AnimGraph;
 
 }
 

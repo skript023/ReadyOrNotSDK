@@ -16,13 +16,6 @@
 namespace SDK
 {
 
-// ScriptStruct ANIMBP_TacPhone.ANIMBP_TacPhone_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ANIMBP_TacPhone::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
-DUMPER7_ASSERTS_ANIMBP_TacPhone__FAnimBlueprintGeneratedMutableData;
-
 // ScriptStruct ANIMBP_TacPhone.ANIMBP_TacPhone_C.AnimBlueprintGeneratedConstantData
 // 0x00CF (0x00D0 - 0x0001)
 struct ANIMBP_TacPhone::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
